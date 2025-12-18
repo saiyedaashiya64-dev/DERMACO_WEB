@@ -734,12 +734,13 @@ ul.navbar-nav > li.active > a {
 }
 /*-- Logo --*/
 .logo img {
-  width: auto;
-  height: 120px;
+  height: 120px;          /* existing hi rehne do */
+  transform: scale(1.75); /* yaha value adjust kar sakte ho */
+  transform-origin: left center;
 }
 
 .header-two .logo img {
-  height: 90px;
+  height: 60px;
 }
 
 /* header right */
