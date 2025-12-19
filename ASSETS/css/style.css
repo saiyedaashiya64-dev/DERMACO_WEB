@@ -1571,6 +1571,59 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   font-weight: 500;
 }
 
+/*skin concurs*/
+.concern-section {
+  text-align: center;
+  padding: 70px 20px;
+  background-color: #ffffff;
+}
+
+.concern-section h2 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.concern-subtitle {
+  font-size: 16px;
+  color: #777;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.concern-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.concern-item {
+  width: 200px;
+  text-align: center;
+}
+
+.concern-item img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.concern-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.concern-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+
 
 /* Intro
 ================================================== */
