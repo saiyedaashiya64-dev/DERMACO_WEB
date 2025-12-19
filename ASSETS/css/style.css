@@ -3366,3 +3366,13 @@ label {
   font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
+/* Prevent banner flicker before JS init */
+/* hide only before slick loads */
+.banner-carousel {
+  opacity: 0;
+}
+
+/* slick khud add karega */
+.banner-carousel.slick-initialized {
+  opacity: 1;
+}

@@ -11,9 +11,18 @@ fetch("../CONTENT/footer.html")
 // Load pages dynamically
 function loadPage(page) {
   fetch(page)
-    .then(res => res.text())
-    .then(data => document.getElementById("content").innerHTML = data);
+    .then(r => r.text())
+    .then(d => {
+      const content = document.getElementById("content");
+      content.innerHTML = d;
+
+      // 🔥 banner init ONLY after DOM paint
+      requestAnimationFrame(() => {
+        if (page.includes("home")) {
+          initHomeBanner();
+        }
+      });
+    });
 }
 
-// Default page
 loadPage("../PAGES/home.html");
