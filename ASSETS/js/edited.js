@@ -40,3 +40,37 @@ document.addEventListener("click", function (e) {
   }
 
 });
+
+
+function initOfferSlider() {
+
+  // Desktop / LP: NO slider
+  if (window.innerWidth > 991) {
+    if ($('.offer-wrapper').hasClass('slick-initialized')) {
+      $('.offer-wrapper').slick('unslick');
+    }
+    return;
+  }
+
+  // Mobile / Tablet: slider ON
+  if (!$('.offer-wrapper').length) return;
+
+  if (!$('.offer-wrapper').hasClass('slick-initialized')) {
+    $('.offer-wrapper').slick({
+      slidesToShow: 1,
+      dots: true,
+      arrows: false
+    });
+  }
+}
+
+initOfferSlider();
+window.addEventListener('resize', initOfferSlider);
+
+/* basic click tracking */
+document.addEventListener('click', function (e) {
+  const card = e.target.closest('.track-offer');
+  if (!card) return;
+
+  console.log('Offer clicked:', card.dataset.offer);
+});
