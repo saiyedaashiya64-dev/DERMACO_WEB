@@ -36,6 +36,9 @@ p {
   line-height: 26px;
   font-size: 15px;
 }
+section {
+  scroll-margin-top: 100px;
+}
 
 h1,
 h2,
@@ -48,6 +51,8 @@ h6 {
   font-family: "Montserrat", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased !important;
+   transition: color 0.3s ease;
+   letter-spacing: 0.3px;
 }
 
 h1 {
@@ -79,6 +84,41 @@ h4 {
 h5 {
   font-size: 14px;
   line-height: 24px;
+}
+h1:hover,
+ h2:hover,
+ h3:hover,
+ h4:hover,
+ h5:hover,
+ h6:hover,
+ p:hover,
+ a:hover {
+  color: #000;
+}
+
+h1::after,
+ h2::after,
+ h3::after,
+ p::after,
+ a::after {
+  content: "";
+  left: 0;
+  background: #d7c5b7;
+  transition: width 0.3s ease;
+}
+h1:hover::after,
+ h2:hover::after,
+ h3:hover::after,
+ p:hover::after,
+ a:hover::after {
+  width: 100%;
+}
+
+p {
+  opacity: 0.85;
+}
+p:hover {
+  opacity: 1;
 }
 
 .alert .icon {
@@ -1558,19 +1598,23 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .category-item img:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
+  box-shadow: 0 14px 30px rgba(215,197,183,0.6);
 }
 
 .category-item p {
   margin-top: 15px;
   font-size: 16px;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
-
+.category-item:hover p {
+  color: #000;
+}
 /*skin concurs*/
 .concern-section {
   text-align: center;
@@ -1601,6 +1645,9 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .concern-item {
   width: 200px;
   text-align: center;
+  padding: 15px;
+  border-radius: 18px;
+  transition: all 0.35s ease;
 }
 
 .concern-item img {
@@ -1609,20 +1656,172 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .concern-item h4 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 6px;
+  transition: color 0.3s ease;
 }
 
 .concern-item p {
   font-size: 14px;
   color: #666;
   line-height: 1.5;
+  transition: color 0.3s ease;
+}
+/* ✨ Hover Effects */
+.concern-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  background: rgba(215, 197, 183, 0.12); /* your beige tone */
 }
 
+.concern-item:hover img {
+  transform: scale(1.06);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  outline: 4px solid rgba(215, 197, 183, 0.5);
+  outline-offset: 6px;
+}
+
+.concern-item:hover h4 {
+  color: #000;
+}
+
+.concern-item:hover p {
+  color: #444;
+}
+/*Reasons to Trust Us*/
+.reasons {
+  padding: 80px 20px;
+  text-align: center;
+}
+  .reasons {
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #faf7f4
+  );
+}
+
+
+.reasons h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.reasons-row {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.reason-card {
+  max-width: 260px;
+  transition: all 0.35s ease;
+  background: #fff;
+}
+
+.reason-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 5px;
+  transition: transform 0.35s ease;
+}
+
+.reason-card p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333333;
+  transition: color 0.35s ease;
+}
+/*  Hover Effect */
+.reason-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  background: rgba(215, 197, 183, 0.12);
+}
+
+.reason-card:hover img {
+  transform: scale(1.08);
+}
+
+.reason-card:hover p {
+  color: #000;
+}
+
+/*DermaCo. Intro Section*/
+.brand-intro {
+  padding: 80px 20px;
+  background-color: #fcfbf9;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.brand-title {
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.brand-heading {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.brand-subheading {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 50px 0 20px;
+}
+
+.brand-text {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 18px;
+  max-width: 900px;
+}
+
+.brand-list,
+.brand-services {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.brand-list li,
+.brand-services li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #444;
+  
+}
+.brand-list li::marker,
+.brand-services li::marker {
+  color: #d7c5b7;
+}
+
+
+
+.category-section,
+.concern-section,
+.reasons,
+.brand-intro {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
 
 
 /* Intro
@@ -3615,6 +3814,7 @@ label {
   position: relative;
   overflow: hidden;
   border-radius: 16px; /* smooth shape */
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 /* Image */
@@ -3626,10 +3826,14 @@ label {
   border-radius: 16px;
   transition: transform 0.45s ease;
 }
+.offer-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
 
 /* Hover zoom (desktop) */
 .offer-item:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 /* Overlay icon */
