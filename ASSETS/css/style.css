@@ -774,7 +774,7 @@ ul.navbar-nav > li.active > a {
 }
 /*-- Logo --*/
 .logo img {
-  height: 120px;          /* existing hi rehne do */
+  height: 180px;          /* existing hi rehne do */
   transform: scale(1.75); /* yaha value adjust kar sakte ho */
   transform-origin: left center;
 }
@@ -3687,13 +3687,18 @@ label {
   border-left: 5px solid #FFB600;
    padding: 34px 28px;   /* ↑ height increase */
   min-height: 110px;
+  transition: all 0.3s ease;
 }
 
 /* title */
 .cta-title {
   font-size: 20px;
   font-weight: 600;
-  white-space: nowrap;
+  color: #000 !important; /* final black */
+  transition: color 0.3s ease;
+}
+.cta-title:hover {
+  color: #FFB600; /* changes text color on hover */
 }
 
 /* inputs */
@@ -3706,12 +3711,43 @@ label {
 .cta-inputs .form-control {
   height: 48px;
   min-width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 12px;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+.cta-inputs .form-control:hover {
+  border-color: #FFB600;  /* highlight border on hover */
+  box-shadow: 0 2px 6px rgba(255, 182, 0, 0.3);
+}
+.cta-inputs .form-control:focus {
+  border-color: #FFB600;  /* highlight border on focus */
+  box-shadow: 0 4px 10px rgba(255, 182, 0, 0.4);
+  outline: none;           /* remove default blue outline */
+}
+.cta-row:hover {
+  background: #fff9f0;       /* subtle warm background */
+  transform: translateY(-3px); /* lift effect */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+.cta-row, 
+.cta-title, 
+.cta-button .btn, 
+.cta-inputs .form-control {
+  transition: all 0.3s ease;
 }
 
 /* button */
 .cta-button .btn {
   padding: 12px 30px;
   font-weight: 600;
+  transition: all 0.3s ease;
+}
+.cta-button .btn:hover {
+  background-color: #FFB600; /* change to highlight color */
+  color: #000;               /* text color change */
+  transform: scale(1.05);    /* slight grow effect */
 }
 
 /* ===== TABLET & MOBILE ===== */
