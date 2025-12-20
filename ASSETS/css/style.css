@@ -184,7 +184,7 @@ a.read-more:hover {
 
 section,
 .section-padding {
-  padding: 70px 0;
+  padding: 1px 0;
   position: relative;
 }
 
@@ -772,6 +772,8 @@ ul.navbar-nav > li.active > a {
   display: flex;
   align-items: center;
 }
+
+
 /*-- Logo --*/
 .logo img {
   height: 180px;          /* existing hi rehne do */
@@ -1572,13 +1574,13 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 /* hair and skin solutions with circular images*/
 .category-section {
   text-align: center;
-  padding: 60px 20px;
+  padding: 30px 10px;
   background-color: #ffffff;
 }
 
 .category-section h2 {
   font-size: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   font-weight: 500;
 }
 
@@ -1625,7 +1627,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .concern-section h2 {
   font-size: 42px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .concern-subtitle {
@@ -1655,14 +1657,14 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .concern-item h4 {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
   transition: color 0.3s ease;
 }
 
@@ -1710,7 +1712,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .reasons h2 {
   font-size: 36px;
   font-weight: 500;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .reasons-row {
@@ -1770,14 +1772,14 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   font-size: 48px;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .brand-heading {
   font-size: 30px;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .brand-subheading {
@@ -1819,8 +1821,8 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .concern-section,
 .reasons,
 .brand-intro {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 
