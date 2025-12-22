@@ -4024,7 +4024,8 @@ label {
 }
 /*acne page navigation*/
 .acne-tabs {
-  padding: 60px 0;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
 }
 
 .section-title {
@@ -4042,16 +4043,18 @@ label {
 }
 
 .tab-btn {
+  text-decoration: none;
   padding: 12px 18px;
   border: 1px solid #222;
   background: #fff;
+  color: #222;
   cursor: pointer;
   font-size: 15px;
   transition: 0.3s;
+  border-radius: 5px;
 }
 
-.tab-btn:hover,
-.tab-btn.active {
+.tab-btn:hover {
   background: #a56a3a;
   color: #fff;
   border-color: #a56a3a;
@@ -4063,12 +4066,96 @@ label {
 }
 
 .tab-pane {
-  display: none;
-  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.tab-pane h2 {
+  color: #a56a3a;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.tab-pane h3 {
+  color: #a56a3a;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.tab-pane p {
   line-height: 1.7;
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 16px;
 }
 
-.tab-pane.active {
-  display: block;
+.tab-pane ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
 
+.tab-pane li {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .tab-pane h2 {
+    font-size: 26px;
+  }
+  .tab-pane h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tab-pane h2 {
+    font-size: 24px;
+  }
+
+  .tab-pane h3 {
+    font-size: 18px;
+  }
+
+  .tab-pane p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .acne-tabs {
+    padding: 30px 15px;
+  }
+
+  .tab-pane h2 {
+    font-size: 22px;
+  }
+
+  .tab-pane h3 {
+    font-size: 16px;
+  }
+
+  .tab-pane p {
+    font-size: 14px;
+  }
+
+  .tab-btn {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
+
+/* Optional smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
