@@ -25,6 +25,7 @@ function loadPage(page) {
     });
 }
 
+
 loadPage("../PAGES/home.html");
 document.addEventListener("click", function (e) {
 
@@ -75,18 +76,28 @@ document.addEventListener('click', function (e) {
   console.log('Offer clicked:', card.dataset.offer);
 });
 
-/*acne page navigation*/
 
-  const tabButtons = document.querySelectorAll(".tab-btn");
-  const tabPanes = document.querySelectorAll(".tab-pane");
+/* =========================
+   SPA SAFE TABS (FINAL)
+========================= */
+document.addEventListener("click", function (e) {
 
-  tabButtons.forEach(button => {
-    button.addEventListener("click", () => {
-      tabButtons.forEach(btn => btn.classList.remove("active"));
-      tabPanes.forEach(pane => pane.classList.remove("active"));
+  const btn = e.target.closest(".tab-btn");
+  if (!btn) return;
 
-      button.classList.add("active");
-      document.getElementById(button.dataset.tab).classList.add("active");
-    });
-  })
+  const tabId = btn.getAttribute("data-tab");
+  const tabsSection = btn.closest(".acne-tabs");
+  if (!tabsSection) return;
 
+  const buttons = tabsSection.querySelectorAll(".tab-btn");
+  const panes = tabsSection.querySelectorAll(".tab-pane");
+
+  buttons.forEach(b => b.classList.remove("active"));
+  panes.forEach(p => p.classList.remove("active"));
+
+  btn.classList.add("active");
+
+  const target = tabsSection.querySelector("#" + tabId);
+  if (target) target.classList.add("active");
+
+});
