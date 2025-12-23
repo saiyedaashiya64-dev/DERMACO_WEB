@@ -76,28 +76,25 @@ document.addEventListener('click', function (e) {
   console.log('Offer clicked:', card.dataset.offer);
 });
 
+document.addEventListener("DOMContentLoaded", function () {
 
-/* =========================
-   SPA SAFE TABS (FINAL)
-========================= */
-document.addEventListener("click", function (e) {
+  const tabButtons = document.querySelectorAll(".tab-btn");
+  const tabPanes = document.querySelectorAll(".tab-pane");
 
-  const btn = e.target.closest(".tab-btn");
-  if (!btn) return;
+  if (!tabButtons.length) return; // agar is page pe tabs nahi ho
 
-  const tabId = btn.getAttribute("data-tab");
-  const tabsSection = btn.closest(".acne-tabs");
-  if (!tabsSection) return;
+  tabButtons.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
 
-  const buttons = tabsSection.querySelectorAll(".tab-btn");
-  const panes = tabsSection.querySelectorAll(".tab-pane");
+      tabButtons.forEach(b => b.classList.remove("active"));
+      tabPanes.forEach(p => p.classList.remove("active"));
 
-  buttons.forEach(b => b.classList.remove("active"));
-  panes.forEach(p => p.classList.remove("active"));
+      this.classList.add("active");
 
-  btn.classList.add("active");
-
-  const target = tabsSection.querySelector("#" + tabId);
-  if (target) target.classList.add("active");
+      const target = this.getAttribute("data-tab");
+      document.getElementById(target).classList.add("active");
+    });
+  });
 
 });
