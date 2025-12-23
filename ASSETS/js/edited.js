@@ -22,6 +22,7 @@ function loadPage(page) {
           initHomeBanner();
         }
       });
+      initTabs();
     });
 }
 
@@ -76,25 +77,48 @@ document.addEventListener('click', function (e) {
   console.log('Offer clicked:', card.dataset.offer);
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+function initTabs() {
 
-  const tabButtons = document.querySelectorAll(".tab-btn");
-  const tabPanes = document.querySelectorAll(".tab-pane");
+  const tabContainers = document.querySelectorAll(".acne-tabs");
+  if (!tabContainers.length) return;
 
-  if (!tabButtons.length) return; // agar is page pe tabs nahi ho
+  tabContainers.forEach(container => {
 
-  tabButtons.forEach(btn => {
-    btn.addEventListener("click", function (e) {
-      e.preventDefault();
+    const buttons = container.querySelectorAll(".tab-btn");
+    const panes = container.querySelectorAll(".tab-pane");
 
-      tabButtons.forEach(b => b.classList.remove("active"));
-      tabPanes.forEach(p => p.classList.remove("active"));
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
 
-      this.classList.add("active");
+        buttons.forEach(b => b.classList.remove("active"));
+        panes.forEach(p => p.classList.remove("active"));
 
-      const target = this.getAttribute("data-tab");
-      document.getElementById(target).classList.add("active");
+        btn.classList.add("active");
+
+        const id = btn.getAttribute("data-tab");
+        container.querySelector("#" + id).classList.add("active");
+
+      });
     });
-  });
 
+  });
+}
+
+const cases = {
+  case1: "<h3>Client 1</h3><p>Severe acne reduced significantly after 8 weeks with controlled breakouts.</p>",
+  case2: "<h3>Client 2</h3><p>Inflammation and acne marks improved after 10 weeks of treatment.</p>",
+  case3: "<h3>Client 3</h3><p>Clearer skin achieved after 6 weeks with smoother texture.</p>"
+};
+
+document.querySelectorAll(".client-card").forEach(card => {
+  card.onclick = () => {
+    document.getElementById("popup-content").innerHTML =
+      cases[card.dataset.popup];
+    document.getElementById("case-popup").style.display = "flex";
+  };
 });
+
+document.querySelector(".popup-close").onclick = () => {
+  document.getElementById("case-popup").style.display = "none";
+};
+
