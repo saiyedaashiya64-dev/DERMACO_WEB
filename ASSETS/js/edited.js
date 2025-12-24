@@ -23,6 +23,8 @@ function loadPage(page) {
         }
       });
       initTabs();
+      initReviewsSlider();
+      initFAQ();
     });
 }
 
@@ -121,4 +123,72 @@ document.querySelectorAll(".client-card").forEach(card => {
 document.querySelector(".popup-close").onclick = () => {
   document.getElementById("case-popup").style.display = "none";
 };
+// Reviews slider logic
+function initReviewsSlider() {
 
+  const track = document.getElementById("reviewsTrack");
+  if (!track) return;
+
+  const prevBtn = document.querySelector(".review-nav.prev");
+  const nextBtn = document.querySelector(".review-nav.next");
+  if (!prevBtn || !nextBtn) return;
+
+  let reviewIndex = 0;
+
+  function getVisibleCount() {
+    return window.innerWidth <= 768 ? 1 : 3;
+  }
+
+  function move(direction) {
+    const cards = track.children;
+    if (!cards.length) return;
+
+    const gap = 30; // card margin-gap
+    const cardWidth = cards[0].offsetWidth + gap;
+
+    const visible = getVisibleCount();
+    const maxIndex = Math.max(0, cards.length - visible);
+
+    reviewIndex += direction;
+
+    if (reviewIndex < 0) reviewIndex = 0;
+    if (reviewIndex > maxIndex) reviewIndex = maxIndex;
+
+    track.style.transform =
+      `translateX(-${reviewIndex * cardWidth}px)`;
+  }
+
+  prevBtn.onclick = () => move(-1);
+  nextBtn.onclick = () => move(1);
+
+  // Reset properly on resize
+  window.addEventListener("resize", () => {
+    reviewIndex = 0;
+    track.style.transform = "translateX(0)";
+  });
+}
+
+
+function initFAQ() {
+  const questions = document.querySelectorAll(".faq-question");
+
+  if (!questions.length) {
+    console.log("FAQ not found yet");
+    return;
+  }
+
+  questions.forEach(q => {
+    q.onclick = function () {
+      const item = this.parentElement;
+
+      // close others (professional behaviour)
+      document.querySelectorAll(".faq-item").forEach(faq => {
+        if (faq !== item) faq.classList.remove("active");
+      });
+
+      item.classList.toggle("active");
+    };
+  });
+
+  console.log("FAQ initialized");
+}

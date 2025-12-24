@@ -4787,3 +4787,527 @@ body {
     font-size: 15px;
   }
 }
+
+/* ===============================
+   END GLOBAL STYLES
+   =============================== */
+   /* ===== DERMA CO REVIEWS ===== */
+
+.reviews-section {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: #ffb600;
+  display: block;
+  margin-top: 8px;
+}
+
+.reviews-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.review-card {
+  width: 320px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 60px 25px 30px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 4px solid #ffb600;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.review-card h4 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.stars {
+  color: #ffb600;
+  margin: 8px 0;
+}
+
+.treatment {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.review-box {
+  background: #fdeee5;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #9b5a2c;
+  line-height: 1.6;
+}
+
+.review-nav {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffb600;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.review-nav.prev { left: -20px; }
+.review-nav.next { right: -20px; }
+
+@media (max-width: 768px) {
+  .review-card { width: 280px; }
+  .review-nav { display: none; }
+}
+/* ================================
+   CUSTOMER REVIEWS – FINAL DESIGN
+================================ */
+
+.reviews-section {
+  padding: 40px 0 60px;          /* 🔥 top gap fix */
+  background: #fffaf6;
+  overflow: hidden;
+}
+
+
+
+.reviews-section .section-title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #ffb600;
+  display: block;
+  margin-top: 8px;
+}
+
+/* WRAPPER */
+.reviews-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* TRACK */
+.reviews-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.45s ease;
+}
+
+/* CARD */
+.review-card {
+  background: #fff;
+  border-radius: 18px;
+  width: 280px;
+  padding: 50px 25px 30px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* AVATAR */
+.review-card .avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #ffb600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+}
+
+/* NAME */
+.review-card h4 {
+  margin-top: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* STARS */
+.review-card .stars {
+  color: #ffb600;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* TREATMENT */
+.review-card .treatment {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* REVIEW BOX */
+.review-card .review-box {
+  background: #fdeee3;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #a75a2b;
+  position: relative;
+}
+
+.review-card .review-box::before {
+  content: "“";
+  position: absolute;
+  left: 10px;
+  top: -10px;
+  font-size: 28px;
+  color: #ffb600;
+}
+
+/* NAV BUTTONS */
+.review-nav {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffb600;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 5;
+}
+
+.review-nav.prev {
+  left: -15px;
+}
+
+.review-nav.next {
+  right: -15px;
+}
+
+.review-nav:hover {
+  background: #000;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .reviews-track {
+    gap: 20px;
+  }
+
+  .review-card {
+    width: 260px;
+  }
+
+  .review-nav.prev {
+    left: 5px;
+  }
+
+  .review-nav.next {
+    right: 5px;
+  }
+}
+/* ================================
+   FAQ SECTION
+================================ */
+
+.faq-section {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 18px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-icon {
+  font-size: 22px;
+  color: #ffb600;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  transition: max-height 0.35s ease;
+  margin-top: 0;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+/* ================================
+   FAQ RESPONSIVE FIX
+================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .faq-section {
+    padding: 50px 20px;
+  }
+
+  .faq-list {
+    max-width: 100%;
+  }
+
+  .faq-question {
+    font-size: 15px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .faq-section {
+    padding: 40px 16px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .faq-icon {
+    font-size: 20px;
+  }
+
+  .faq-answer {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .faq-item {
+    padding: 14px 0;
+  }
+}
+/* =========================
+   FAQ SECTION – FINAL FIX
+========================= */
+
+.faq-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 18px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #222;
+}
+
+.faq-icon {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffb600;
+  transition: transform 0.3s ease;
+}
+
+/* ANSWER HIDDEN BY DEFAULT */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  padding-right: 20px;
+}
+
+/* ACTIVE STATE */
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg); /* + becomes × */
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .faq-question {
+    font-size: 16px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
+}
+/* FAQ FORCE FIX */
+
+.faq-answer {
+  display: none;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+/* =========================
+   REVIEWS SLIDER FINAL FIX
+========================= */
+
+.reviews-wrapper {
+  position: relative;
+  overflow: hidden; /* 🔑 THIS HIDES EXTRA CARDS */
+}
+
+.reviews-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+/* REVIEW CARD SIZE */
+.review-card {
+  flex: 0 0 calc((100% - 60px) / 3); /* 3 cards desktop */
+  max-width: calc((100% - 60px) / 3);
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 25px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* MOBILE VIEW → 1 CARD */
+@media (max-width: 768px) {
+  .review-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/* Increase overall visible area */
+.reviews-section {
+  padding: 10px 0 50px;   /* upar + niche space */
+}
+
+/* Wrapper ko proper height dena */
+.reviews-wrapper {
+  position: relative;
+  padding: 60px 40px;     /* left-right space so cards breathe */
+  overflow: hidden;      /* slider clean rahe */
+}
+
+/* Track ko thoda niche lao */
+.reviews-track {
+  padding-top: 40px;
+}
+
+/* Card ko fully visible rakhna */
+.review-card {
+  height: auto;
+  min-height: 380px;     /* IMPORTANT */
+}
+
+/* Quote box spacing fix */
+.review-box {
+  margin-bottom: 10px;
+}
+
+/* Nav arrows ko center me lock */
+.review-nav {
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .reviews-wrapper {
+    padding: 40px 15px;
+  }
+
+  .review-card {
+    min-height: unset;
+  }
+}
