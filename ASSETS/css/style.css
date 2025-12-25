@@ -5311,3 +5311,14 @@ body {
     min-height: unset;
   }
 }
+.hero-bg-facial{
+  height: 420px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: url("../images/Facial_D.jpeg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 8%;
+}
