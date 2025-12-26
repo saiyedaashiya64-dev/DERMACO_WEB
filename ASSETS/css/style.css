@@ -5246,6 +5246,28 @@ body {
   align-items: center;
   padding-right: 8%;
 }
+.hero-bg-hair{
+  height: 420px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: url("../images/banner/Hair_Care_D.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 8%;
+}
+.hero-bg-laser_hair{
+  height: 420px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: url("../images/banner/LHR_D.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 8%;
+}
 @media (min-width: 992px) {
 
   .cost-table-wrapper {
@@ -5314,5 +5336,44 @@ body {
   .journey-content h4 {
     margin-top: 0;
     margin-bottom: 8px;
+  }
+}
+.lhr-before-after-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0 40px;
+}
+
+.lhr-pair img {
+  width: 100%;
+  display: block;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.lhr-precautions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.precaution-box h4 {
+  margin-bottom: 10px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .lhr-before-after-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lhr-precautions {
+    grid-template-columns: 1fr;
   }
 }
