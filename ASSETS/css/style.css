@@ -5268,6 +5268,17 @@ body {
   align-items: center;
   padding-right: 8%;
 }
+.hero-bg-skin-brithing{
+  height: 420px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: url("../images/banner/Bright_Pigme_D.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 8%;
+}
 @media (min-width: 992px) {
 
   .cost-table-wrapper {
