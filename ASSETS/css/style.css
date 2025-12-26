@@ -5322,3 +5322,102 @@ body {
   align-items: center;
   padding-right: 8%;
 }
+
+/* ================================
+   FACIAL PAGE – DESKTOP FIXES
+   Screen ≥ 992px
+================================ */
+@media (min-width: 992px) {
+
+  /* 1️⃣ Improve reading width (text too wide issue) */
+  .derma-info-block .info-left {
+    max-width: 820px;
+  }
+
+  /* 2️⃣ Proper desktop grid for content + CTA */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
+    gap: 60px;
+    align-items: flex-start;
+  }
+
+  /* 3️⃣ Tabs look more desktop-friendly */
+  .tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .tab-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+    min-width: 220px;
+  }
+
+  /* 4️⃣ CTA section should look wide on PC */
+  .cta-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cta-inputs {
+    display: flex;
+    gap: 12px;
+  }
+
+  .cta-inputs input {
+    width: 180px;
+  }
+
+  /* 5️⃣ Cost table readability */
+  .cost-table {
+    min-width: 750px;
+  }
+
+  .cost-table-wrapper {
+    overflow-x: auto;
+  }
+
+  /* 6️⃣ Journey icons bigger for desktop */
+  .journey-icon {
+    font-size: 38px;
+  }
+
+  /* 7️⃣ Reduce excessive vertical gaps */
+  .category-section,
+  .concern-section,
+  .reasons,
+  .brand-intro {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* ================================
+   EXTRA LARGE SCREENS ≥ 1200px
+================================ */
+@media (min-width: 1200px) {
+
+  /* Premium background feel on desktop */
+  .derma-info-block {
+    background: linear-gradient(
+      to right,
+      #fcfbf9 0%,
+      #ffffff 70%
+    );
+  }
+}
+/* ================================
+   FACIAL COST TABLE – 2 INCH MARGIN
+================================ */
+@media (min-width: 992px) {
+
+  .cost-table-wrapper {
+    margin-left: 192px;
+    margin-right: 192px; /* 2 inches */
+  }
+
+}
