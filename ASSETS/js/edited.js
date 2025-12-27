@@ -192,3 +192,34 @@ function initFAQ() {
 
   console.log("FAQ initialized");
 }
+
+function loadPage(page) {
+  fetch(page)
+    .then(r => r.text())
+    .then(d => {
+      const content = document.getElementById("content");
+      content.innerHTML = d;
+
+      // Re-init fade-in observer for new content
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+      // 🔥 banner init ONLY after DOM paint
+      requestAnimationFrame(() => {
+        if (page.includes("home")) {
+          initHomeBanner();
+        }
+      });
+      initTabs();
+      initReviewsSlider();
+      initFAQ();
+    });
+}
+
