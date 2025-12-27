@@ -128,9 +128,7 @@ h5 {
   font-size: 14px;
   line-height: 24px;
 }
-p{
-  color: var(--text-muted);
-}
+
 h1:hover,
  h2:hover,
  h3:hover,
@@ -4105,23 +4103,32 @@ label {
 }
 
 .tab-btn {
-  padding: 10px 18px;
-  background: #f1f1f1;
-  color: #333;
   text-decoration: none;
-  border-radius: 6px;
   font-size: 14px;
   cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #FFC628;
+  background: #fff;
+  color: #222;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
-.tab-btn.active {
-  background: #007bff;
+.tab-btn.active,
+.tab-btn:hover {
+  background: linear-gradient(135deg, #FFC628, #F4A300);
   color: #fff;
+  border-color: #F4A300;
+  box-shadow: 0 4px 12px rgba(255, 198, 40, 0.45);
 }
 
 /* TAB CONTENT */
 .tab-pane {
-  display: none;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
 }
 
 .tab-pane.active {
@@ -4332,9 +4339,13 @@ label {
 .client-card {
   position: relative;
   overflow: hidden;
-  border-radius: 6px;
   cursor: pointer;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.08);
 }
+
 
 /* IMAGE – SAME HEIGHT */
 .client-card img {
@@ -4349,16 +4360,21 @@ label {
 .client-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,.6);
-  color: #fff;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  color: #fff;
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s ease;
 }
+.client-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 198, 40, 0.3);
+}
+
 
 .client-card:hover img {
   transform: scale(1.05);
@@ -4412,8 +4428,10 @@ label {
 
 .acne-final-section {
   padding: 80px 0;
-  background: #fafafa;
   text-align: center;
+  background: #FFF7E1;
+  padding: 50px 0;
+  border-radius: 12px;
 }
 
 .acne-final-section .section-sub-title {
@@ -4430,6 +4448,16 @@ label {
 
 .final-cta {
   margin: 30px 0;
+}
+.final-cta a {
+  background: linear-gradient(135deg, #FFC628, #F4A300);
+  padding: 14px 30px;
+  border-radius: 12px;
+  font-size: 18px;
+}
+.final-cta a:hover {
+  box-shadow: 0 10px 16px rgba(255, 198, 40, 0.35);
+  transform: translateY(-3px);
 }
 
 .final-note {
