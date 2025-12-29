@@ -5484,3 +5484,50 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/*sevices offers*/
+.hero-bg-services-offer{
+height: 420px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: url("../images/offers/offer_banner.jpeg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 8%;
+}
+/*eye_circle page*/
+.hero-bg-eye-circle{
+height: 420px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: url("../images/banner/eye_circle.jpeg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 8%;
+}
+/*offer images*/
+.dermaco-hero-banners {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+    background: #fff; /* or your site BG */
+}
+
+.hero-banner1 {
+    width: 48%;
+    max-width: 650px;
+}
+
+.hero-banner1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+}
