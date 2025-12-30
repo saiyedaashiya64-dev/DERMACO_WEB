@@ -5531,3 +5531,15 @@ height: 420px;
     border-radius: 12px;
     object-fit: cover;
 }
+/*anti wrinkle*/
+.hero-bg-anti-wrinkle{
+  height: 420px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: url("../images/banner/anti_wrinkle.jpeg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 8%;
+}
