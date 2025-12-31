@@ -123,6 +123,46 @@ document.querySelectorAll(".client-card").forEach(card => {
 document.querySelector(".popup-close").onclick = () => {
   document.getElementById("case-popup").style.display = "none";
 };
+document.addEventListener("click", function (e) {
+
+  if (window.innerWidth > 991) return;
+
+  const trigger = e.target.closest(".dropdown-submenu > a");
+  if (!trigger) return;
+
+  e.preventDefault();
+
+  const submenu = trigger.nextElementSibling;
+
+  // Close other accordion sections
+  document.querySelectorAll(".dropdown-submenu .dropdown-menu").forEach(menu => {
+    if (menu !== submenu) menu.style.display = "none";
+  });
+
+  submenu.style.display =
+    submenu.style.display === "block" ? "none" : "block";
+});
+
+// Prevent Bootstrap from closing dropdown on submenu click (mobile)
+document.addEventListener("click", function (e) {
+  if (window.innerWidth > 991) return;
+
+  if (e.target.closest(".dropdown-menu")) {
+    e.stopPropagation();
+  }
+});
+function disableBootstrapDropdownOnMobile() {
+  if (window.innerWidth <= 991) {
+    document.querySelectorAll('.dropdown-toggle').forEach(el => {
+      el.removeAttribute('data-toggle');
+    });
+  }
+}
+
+window.addEventListener('resize', disableBootstrapDropdownOnMobile);
+disableBootstrapDropdownOnMobile();
+
+
 // Reviews slider logic
 function initReviewsSlider() {
 
@@ -192,6 +232,92 @@ function initFAQ() {
 
   console.log("FAQ initialized");
 }
+function initRecommendedProductSlider() {
+  const slider = document.querySelector(".product-slider");
+  const next = document.querySelector(".slider-arrow.next");
+  const prev = document.querySelector(".slider-arrow.prev");
+
+  if (!slider || !next || !prev) return;
+
+  next.onclick = () => {
+    slider.scrollBy({ left: 320, behavior: "smooth" });
+  };
+
+  prev.onclick = () => {
+    slider.scrollBy({ left: -320, behavior: "smooth" });
+  };
+}
+function initRecommendedProductDetails() {
+
+  const overlay = document.querySelector(".product-detail-overlay");
+  const content = document.querySelector(".product-detail-content");
+
+  if (!overlay || !content) return;
+
+  document.querySelectorAll(".product-card").forEach(card => {
+
+    card.onclick = () => {
+      const {
+        title,
+        image,
+        description,
+        ingredients,
+        bestfor,
+        concerns
+      } = card.dataset;
+
+      const bestForList = bestfor
+        .split(",")
+        .map(i => `<li>✔ ${i.trim()}</li>`)
+        .join("");
+
+      const concernsList = concerns
+        .split(",")
+        .map(i => `<li>✔ ${i.trim()}</li>`)
+        .join("");
+
+      content.innerHTML = `
+        <div class="product-detail-image">
+          <img src="${image}" alt="${title}">
+        </div>
+
+        <h3>${title}</h3>
+        <p>${description}</p>
+
+        <ul class="ingredient-list">
+          ${ingredients}
+        </ul>
+
+        <div class="product-meta">
+          <div class="meta-block">
+            <h4>Best for</h4>
+            <ul>${bestForList}</ul>
+          </div>
+
+          <div class="meta-divider"></div>
+
+          <div class="meta-block">
+            <h4>Concerns</h4>
+            <ul>${concernsList}</ul>
+          </div>
+        </div>
+      `;
+
+      overlay.style.display = "flex";
+    };
+
+  });
+
+  overlay.onclick = e => {
+    if (
+      e.target.classList.contains("product-detail-overlay") ||
+      e.target.classList.contains("product-close")
+    ) {
+      overlay.style.display = "none";
+    }
+  };
+}
+
 
 function loadPage(page) {
   fetch(page)
@@ -220,6 +346,8 @@ function loadPage(page) {
       initTabs();
       initReviewsSlider();
       initFAQ();
+      initRecommendedProductSlider();
+      initRecommendedProductDetails();
     });
 }
 
