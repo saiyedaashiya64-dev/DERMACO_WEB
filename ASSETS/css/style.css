@@ -5509,27 +5509,52 @@ height: 420px;
   align-items: center;
   padding-right: 8%;
 }
-/*offer images*/
+/* OFFER BANNERS GRID */
 .dermaco-hero-banners {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on PC */
     gap: 20px;
-    padding: 30px 0;
-    background: #fff; /* or your site BG */
+    padding: 30px;
+    background: #fff;
+    box-sizing: border-box;
 }
 
+/* BANNER BOX */
 .hero-banner1 {
-    width: 48%;
-    max-width: 650px;
+    width: 100%;
+    overflow: hidden; /* keeps zoom inside */
+    border-radius: 12px;
 }
 
+/* IMAGE STYLE */
 .hero-banner1 img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 12px;
     object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* HOVER ZOOM EFFECT */
+.hero-banner1:hover img {
+    transform: scale(1.08);
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+    .dermaco-hero-banners {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .dermaco-hero-banners {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
 }
 /*anti wrinkle*/
 .hero-bg-anti-wrinkle{
