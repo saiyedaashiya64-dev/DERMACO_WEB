@@ -106,9 +106,12 @@ document.querySelectorAll(".client-card").forEach(card => {
   };
 });
 
-document.querySelector(".popup-close").onclick = () => {
-  document.getElementById("case-popup").style.display = "none";
-};
+const popupClose = document.querySelector(".popup-close");
+if (popupClose) {
+  popupClose.onclick = () => {
+    document.getElementById("case-popup").style.display = "none";
+  };
+}
 document.addEventListener("click", function (e) {
 
   if (window.innerWidth > 991) return;
