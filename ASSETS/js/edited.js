@@ -142,6 +142,11 @@ document.addEventListener("click", function (e) {
   submenu.style.display =
     submenu.style.display === "block" ? "none" : "block";
 });
+// When opening popup
+document.body.style.overflow = "hidden";
+
+// When closing popup
+document.body.style.overflow = "";
 
 // Prevent Bootstrap from closing dropdown on submenu click (mobile)
 document.addEventListener("click", function (e) {
