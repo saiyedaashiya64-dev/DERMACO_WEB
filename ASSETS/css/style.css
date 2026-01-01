@@ -6072,3 +6072,192 @@ height: 420px;
     border-radius: 18px 18px 0 0;
   }
 }
+/* =================================================
+   MOBILE SUB → SUB MENU (FINAL CLEAN VERSION)
+   Works with: .mobile-submenu + .submenu-title
+================================================= */
+@media (max-width: 991px) {
+
+  /* hide sub-sub menu by default */
+  .mobile-submenu > .dropdown-menu {
+    display: none;
+    padding-left: 15px;
+  }
+
+  /* show when open */
+  .mobile-submenu.open > .dropdown-menu {
+    display: block;
+  }
+
+  /* clickable title */
+  .submenu-title {
+    padding: 12px 0;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* arrow */
+  .submenu-arrow {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  /* rotate arrow when open */
+  .mobile-submenu.open .submenu-arrow {
+    transform: rotate(90deg);
+  }
+
+}
+/* =========================================
+   CLEAN & PROFESSIONAL MOBILE SUBMENU UI
+========================================= */
+@media (max-width: 991px) {
+
+  /* Main dropdown menu box */
+  .navbar .dropdown-menu {
+    border-radius: 10px;
+    padding: 8px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    border: none;
+  }
+
+  /* Submenu container */
+  .mobile-submenu {
+    padding: 0 14px;
+  }
+
+  /* Submenu title row (Skin / Hair / Body) */
+  .submenu-title {
+    padding: 12px 6px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.25s ease;
+  }
+
+  .submenu-title:hover {
+    background: #f5f5f5;
+  }
+
+  /* Arrow icon */
+  .submenu-arrow {
+    font-size: 14px;
+    color: #f5a623; /* clinic accent */
+    transition: transform 0.25s ease;
+  }
+
+  /* Rotate arrow */
+  .mobile-submenu.open .submenu-arrow {
+    transform: rotate(90deg);
+  }
+
+  /* Sub-sub menu */
+  .mobile-submenu > .dropdown-menu {
+    display: none;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    background: #fafafa;
+    border-left: 2px solid #f5a623;
+    border-radius: 6px;
+  }
+
+  .mobile-submenu.open > .dropdown-menu {
+    display: block;
+  }
+
+  /* Sub-sub links */
+  .mobile-submenu .dropdown-menu li a {
+    padding: 10px 8px;
+    font-size: 14px;
+    color: #444;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.2s ease;
+  }
+
+  .mobile-submenu .dropdown-menu li a:hover {
+    background: #f0f0f0;
+  }
+}
+/* =========================================
+   DESKTOP (PC) SERVICES SUBMENU – CLEAN LOOK
+========================================= */
+@media (min-width: 992px) {
+
+  /* Main Services dropdown */
+  .navbar .dropdown-menu {
+    border-radius: 12px;
+    padding: 10px 0;
+    min-width: 230px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+    border: none;
+  }
+
+  /* First-level submenu items (Skin, Hair, Body) */
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu > .submenu-title {
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease;
+  }
+
+  .dropdown-submenu > .submenu-title:hover {
+    background: #f5f5f5;
+    color: #000;
+  }
+
+  /* Arrow */
+  .submenu-arrow {
+    font-size: 13px;
+    color: #f5a623;
+  }
+
+  /* Sub-sub menu positioning */
+  .dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: 6px;
+    border-radius: 12px;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+    display: none;
+  }
+
+  /* Hover open on PC */
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+
+  /* Sub-sub menu links */
+  .dropdown-submenu > .dropdown-menu li a {
+    padding: 10px 18px;
+    font-size: 14px;
+    color: #444;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .dropdown-submenu > .dropdown-menu li a:hover {
+    background: #f0f0f0;
+    color: #000;
+  }
+}
+

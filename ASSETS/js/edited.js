@@ -1,7 +1,10 @@
-// Load header
 fetch("../CONTENT/header.html")
   .then(res => res.text())
-  .then(data => document.getElementById("header").innerHTML = data);
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+    initMobileSubMenu(); // 🔥 VERY IMPORTANT
+  });
+
 
 // Load footer
 fetch("../CONTENT/footer.html")
@@ -9,24 +12,7 @@ fetch("../CONTENT/footer.html")
   .then(data => document.getElementById("footer").innerHTML = data);
 
 // Load pages dynamically
-function loadPage(page) {
-  fetch(page)
-    .then(r => r.text())
-    .then(d => {
-      const content = document.getElementById("content");
-      content.innerHTML = d;
 
-      // 🔥 banner init ONLY after DOM paint
-      requestAnimationFrame(() => {
-        if (page.includes("home")) {
-          initHomeBanner();
-        }
-      });
-      initTabs();
-      initReviewsSlider();
-      initFAQ();
-    });
-}
 
 
 loadPage("../PAGES/home.html");
@@ -356,3 +342,59 @@ function loadPage(page) {
     });
 }
 
+function initMobileSubMenu() {
+
+  // prevent bootstrap from closing menu
+  const navbar = document.getElementById("navbar-collapse");
+
+  navbar.addEventListener("click", function (e) {
+
+    const title = e.target.closest(".submenu-title");
+    if (!title) return;
+
+    // mobile only
+    if (window.innerWidth > 991) return;
+
+    // 🔥 VERY IMPORTANT
+    e.preventDefault();
+    e.stopPropagation();
+
+    const parent = title.closest(".mobile-submenu");
+
+    // close other open submenus
+    parent.parentElement
+      .querySelectorAll(".mobile-submenu")
+      .forEach(item => {
+        if (item !== parent) item.classList.remove("open");
+      });
+
+    // toggle current submenu
+    parent.classList.toggle("open");
+  });
+
+  console.log("✅ Mobile submenu fix applied");
+}
+// ===== CLOSE MOBILE MENU ON PAGE OPEN =====
+document.addEventListener("click", function (e) {
+
+  // final menu links only (not submenu titles)
+  const link = e.target.closest(
+    '.dropdown-menu a[onclick], .nav-link[onclick]'
+  );
+
+  if (!link) return;
+
+  // mobile only
+  if (window.innerWidth > 991) return;
+
+  // close bootstrap navbar
+  const navbar = document.getElementById("navbar-collapse");
+  if (navbar && navbar.classList.contains("show")) {
+    navbar.classList.remove("show");
+  }
+
+  // reset all open submenus
+  document.querySelectorAll(".mobile-submenu.open").forEach(item => {
+    item.classList.remove("open");
+  });
+});
