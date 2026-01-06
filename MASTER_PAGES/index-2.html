@@ -21,6 +21,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
@@ -35,7 +36,7 @@ FACEBOOK: https://www.facebook.com/themefisher
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name=author content="Themefisher">
   <meta name=generator content="Themefisher Constra HTML Template v1.0">
-  
+
   <!-- theme meta -->
   <meta name="theme-name" content="constra" />
 
@@ -58,14 +59,15 @@ FACEBOOK: https://www.facebook.com/themefisher
   <link rel="stylesheet" href="../ASSETS/plugins/colorbox/colorbox.css">
   <!-- Template styles-->
   <link rel="stylesheet" href="../ASSETS/css/style.css">
- 
+
 
 
 </head>
+
 <body>
   <div class="body-inner">
 
-      <div id="header"></div>
+    <div id="header"></div>
 
     <!-- MAIN CONTENT -->
     <main id="content"></main>
@@ -73,82 +75,127 @@ FACEBOOK: https://www.facebook.com/themefisher
     <!-- FOOTER -->
     <div id="footer"></div>
     <!-- PRODUCT DETAIL OVERLAY -->
-<div class="product-detail-overlay">
-  <div class="product-detail-panel">
+    <div class="product-detail-overlay">
+      <div class="product-detail-panel">
 
-    <button class="product-close">&times;</button>
+        <button class="product-close">&times;</button>
 
-    <div class="product-detail-layout">
+        <div class="product-detail-layout">
 
-      <!-- LEFT : IMAGE -->
-      <div class="product-detail-media">
-        <img id="popupProductImage" src="" alt="">
+          <!-- LEFT : IMAGE -->
+          <div class="product-detail-media">
+            <img id="popupProductImage" src="" alt="">
+          </div>
+
+          <!-- RIGHT : CONTENT -->
+          <div class="product-detail-body">
+            <span class="product-subtitle">Dermatologist Recommended</span>
+            <h2 id="popupProductTitle"></h2>
+            <p id="popupProductDescription"></p>
+
+            <ul id="popupIngredients" class="ingredient-list"></ul>
+
+            <div class="product-meta">
+              <div>
+                <h4>Best For</h4>
+                <ul id="popupBestFor"></ul>
+              </div>
+
+              <div>
+                <h4>Concerns</h4>
+                <ul id="popupConcerns"></ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
+    </div>
+    <!-- PRODUCT DETAIL POPUP -->
 
-      <!-- RIGHT : CONTENT -->
-      <div class="product-detail-body">
-        <span class="product-subtitle">Dermatologist Recommended</span>
-        <h2 id="popupProductTitle"></h2>
-        <p id="popupProductDescription"></p>
 
-        <ul id="popupIngredients" class="ingredient-list"></ul>
 
-        <div class="product-meta">
-          <div>
-            <h4>Best For</h4>
-            <ul id="popupBestFor"></ul>
+
+
+
+
+
+    <!-- Javascript Files
+  ================================================== -->
+    <!-- jQuery -->
+    <script src="../ASSETS/plugins/jQuery/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../ASSETS/plugins/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Slick -->
+    <script src="../ASSETS/plugins/slick/slick.min.js"></script>
+    <script src="../ASSETS/plugins/slick/slick-animation.min.js"></script>
+
+    <!-- Colorbox -->
+    <script src="../ASSETS/plugins/colorbox/jquery.colorbox.js"></script>
+
+    <!-- Shuffle -->
+    <script src="../ASSETS/plugins/shuffle/shuffle.min.js"></script>
+
+    <!-- Theme main script -->
+    <script src="../ASSETS/js/script.js"></script>
+
+    <!-- SPA scripts (VERY IMPORTANT ORDER) -->
+    <!-- SPA scripts (VERY IMPORTANT ORDER) -->
+    <script src="../ASSETS/js/spa-init.js"></script>
+
+    <!-- PRODUCT SYSTEM -->
+    <script src="../ASSETS/js/products-data.js"></script>
+    <script src="../ASSETS/js/products-ui.js"></script>
+
+    <!-- MAIN SITE LOGIC -->
+    <script src="../ASSETS/js/edited.js"></script>
+
+  </div><!-- Body inner end -->
+  <!-- PRODUCT POPUP -->
+  <!-- PRODUCT POPUP -->
+  <div id="productPopup" class="product-popup-overlay">
+
+    <div class="product-popup-box">
+
+      <!-- CLOSE BUTTON -->
+      <span class="product-popup-close">&times;</span>
+
+      <div class="popup-content">
+
+        <!-- LEFT IMAGE -->
+        <div class="popup-left">
+          <img id="popupImage" src="" alt="Product Image">
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="popup-right">
+          <h3 id="popupTitle"></h3>
+          <p id="popupDescription"></p>
+
+          <h4>INGREDIENTS</h4>
+          <div id="popupIngredients">
+            <ul></ul>
           </div>
 
-          <div>
-            <h4>Concerns</h4>
-            <ul id="popupConcerns"></ul>
+          <h4>BEST FOR</h4>
+          <div id="popupBestFor">
+            <ul></ul>
           </div>
+
+          <h4>CONCERNS</h4>
+          <div id="popupConcerns">
+            <ul></ul>
+          </div>
+
+
         </div>
 
       </div>
     </div>
   </div>
-</div>
 
+</body>
 
-
-
- 
-
-
-  <!-- Javascript Files
-  ================================================== -->
-<!-- jQuery -->
-<script src="../ASSETS/plugins/jQuery/jquery.min.js"></script>
-
-<!-- Bootstrap -->
-<script src="../ASSETS/plugins/bootstrap/bootstrap.min.js"></script>
-
-<!-- Slick -->
-<script src="../ASSETS/plugins/slick/slick.min.js"></script>
-<script src="../ASSETS/plugins/slick/slick-animation.min.js"></script>
-
-<!-- Colorbox -->
-<script src="../ASSETS/plugins/colorbox/jquery.colorbox.js"></script>
-
-<!-- Shuffle -->
-<script src="../ASSETS/plugins/shuffle/shuffle.min.js"></script>
-
-<!-- Theme main script -->
-<script src="../ASSETS/js/script.js"></script>
-
-<!-- SPA scripts (VERY IMPORTANT ORDER) -->
- <!-- SPA scripts (VERY IMPORTANT ORDER) -->
-<script src="../ASSETS/js/spa-init.js"></script>
-
-<!-- PRODUCT SYSTEM -->
-<script src="../ASSETS/js/products-data.js"></script>
-<script src="../ASSETS/js/products-ui.js"></script>
-
-<!-- MAIN SITE LOGIC -->
-<script src="../ASSETS/js/edited.js"></script>
-
-  </div><!-- Body inner end -->
-  </body>
-
-  </html>
+</html>
