@@ -202,7 +202,7 @@ const PRODUCTS = {
     size: "15 ml",
     treatments: ["eye-circle"]
   },
-  "eye-serum": {
+  "eye-serum-basic": {
     title: "DermaCo Brightening & Firming Eye Serum ",
     image: "../../ASSETS/images/products/product12.png",
     description:
@@ -221,7 +221,7 @@ const PRODUCTS = {
     size: "10 ml",
     treatments: ["eye-circle"]
   },
-  "eye-serum": {
+  "eye-serum-advanced": {
     title: "DermaCo Brightening & Firming Eye Serum ",
     image: "../../ASSETS/images/products/product12.png",
     description:
