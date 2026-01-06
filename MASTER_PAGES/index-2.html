@@ -75,10 +75,41 @@ FACEBOOK: https://www.facebook.com/themefisher
     <!-- PRODUCT DETAIL OVERLAY -->
 <div class="product-detail-overlay">
   <div class="product-detail-panel">
-    <span class="product-close">&times;</span>
-    <div class="product-detail-content"></div>
+
+    <button class="product-close">&times;</button>
+
+    <div class="product-detail-layout">
+
+      <!-- LEFT : IMAGE -->
+      <div class="product-detail-media">
+        <img id="popupProductImage" src="" alt="">
+      </div>
+
+      <!-- RIGHT : CONTENT -->
+      <div class="product-detail-body">
+        <span class="product-subtitle">Dermatologist Recommended</span>
+        <h2 id="popupProductTitle"></h2>
+        <p id="popupProductDescription"></p>
+
+        <ul id="popupIngredients" class="ingredient-list"></ul>
+
+        <div class="product-meta">
+          <div>
+            <h4>Best For</h4>
+            <ul id="popupBestFor"></ul>
+          </div>
+
+          <div>
+            <h4>Concerns</h4>
+            <ul id="popupConcerns"></ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </div>
+
 
 
 

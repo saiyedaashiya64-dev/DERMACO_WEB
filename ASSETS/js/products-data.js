@@ -221,6 +221,25 @@ const PRODUCTS = {
     size: "10 ml",
     treatments: ["eye-circle"]
   },
+  "eye-serum": {
+    title: "DermaCo Brightening & Firming Eye Serum ",
+    image: "../../ASSETS/images/products/product12.png",
+    description:
+      "A lightweight, fast-absorbing under-eye serum that brightens, tightens, and hydrates delicate under-eye skin. Helps reduce the appearance of dark circles, puffiness, fine lines, and under-eye bags while improving firmness and radiance. Powered by a synergistic blend of soy & rice peptides with seaweed extracts, it boosts circulation, reduces water loss, and soothes tired eyes for an even-toned, refreshed, and youthful-looking under-eye area. Suitable for all skin types and dermatologically tested.",
+    ingredients: [
+      "Soy Peptides: Help improve skin firmness and elasticity while supporting smoother, tighter under-eye skin.",
+      "Rice Peptides: Aid in brightening the under-eye area and reducing the appearance of fine lines and wrinkles.",
+      "Seaweed Extracts: Help reduce puffiness, detoxify the skin, and improve hydration while soothing tired under-eyes.",
+      "Botanical Extracts: Provide multi-action benefits by calming inflammation, reducing under-eye bags, and promoting a youthful appearance."
+
+    ],
+    bestFor: ["Oily Skin","Combination Skin"],
+    concerns: [
+      "Fine lines and wrinkles under eye","Puffiness","Discoloration","Dark circles"
+    ],
+    size: "10 ml",
+    treatments: ["eye-circle"]
+  },
 
 
 };

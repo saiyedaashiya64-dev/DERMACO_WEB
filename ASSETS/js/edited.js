@@ -261,40 +261,52 @@ document.addEventListener("click", function (e) {
   }
 
   const overlay = document.querySelector(".product-detail-overlay");
-  const content = document.querySelector(".product-detail-content");
+  if (!overlay) return;
 
-  if (!overlay || !content) return;
+  const img = overlay.querySelector(".popup-image");
+  const title = overlay.querySelector(".popup-title");
+  const desc = overlay.querySelector(".popup-description");
 
-  content.innerHTML = `
-    <div class="product-detail-image">
-      <img src="${product.image}" alt="${product.title}">
-    </div>
+  const ingredientsList = overlay.querySelector(".popup-ingredients");
+  const bestForList = overlay.querySelector(".popup-bestfor ul");
+  const concernsList = overlay.querySelector(".popup-concerns ul");
 
-    <h3>${product.title}</h3>
-    <p>${product.description}</p>
+  // Fill content
+  img.src = product.image;
+  img.alt = product.title;
 
-    <ul class="ingredient-list">
-      ${product.ingredients.map(i => `<li>${i}</li>`).join("")}
-    </ul>
+  title.textContent = product.title;
+  desc.textContent = product.description;
 
-    <div class="product-meta">
-      <div class="meta-block">
-        <h4>Best for</h4>
-        <ul>${product.bestFor.map(i => `<li>✔ ${i}</li>`).join("")}</ul>
-      </div>
+  // Ingredients
+  ingredientsList.innerHTML = "";
+  product.ingredients.forEach(i => {
+    const li = document.createElement("li");
+    li.textContent = i;
+    ingredientsList.appendChild(li);
+  });
 
-      <div class="meta-divider"></div>
+  // Best for
+  bestForList.innerHTML = "";
+  product.bestFor.forEach(i => {
+    const li = document.createElement("li");
+    li.textContent = "✔ " + i;
+    bestForList.appendChild(li);
+  });
 
-      <div class="meta-block">
-        <h4>Concerns</h4>
-        <ul>${product.concerns.map(i => `<li>✔ ${i}</li>`).join("")}</ul>
-      </div>
-    </div>
-  `;
+  // Concerns
+  concernsList.innerHTML = "";
+  product.concerns.forEach(i => {
+    const li = document.createElement("li");
+    li.textContent = "✔ " + i;
+    concernsList.appendChild(li);
+  });
 
+  // Show popup
   overlay.style.display = "flex";
   document.body.style.overflow = "hidden";
 });
+
 
 
 function initProductPopupClose() {
