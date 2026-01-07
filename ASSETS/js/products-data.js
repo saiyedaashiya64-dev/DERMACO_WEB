@@ -240,6 +240,83 @@ const PRODUCTS = {
     size: "10 ml",
     treatments: ["eye-circle"]
   },
+  "restorist-serum": {
+    title: "DermaCo restorist Serum ",
+    image: "../../ASSETS/images/products/product13.png",
+    description:
+      "A lightweight hair serum designed to revive dry, damaged hair and restore its natural shine. Powered by Abyssinian Oil and a Fermented Hair Complex, it deeply nourishes, smoothens frizz, and improves hair strength without weighing it down. Regular use helps make hair softer, healthier, and more manageable with a glossy finish.",
+    ingredients: [
+      "Sweet Almond Oil: Softens hair and enhances smoothness while reducing dryness.",
+      "Argan Oil: Rich in essential fatty acids that help repair damage, reduce frizz, and boost shine.",
+      "Green Tea Seed Oil: Provides antioxidant protection and supports scalp and hair health.",
+      "Tocopheryl Acetate (Vitamin E): Protects hair from oxidative damage and improves overall hair vitality.",
+      "Butylated Hydroxytoluene (BHT): Antioxidant that helps maintain formula stability."
+
+    ],
+    bestFor: ["All hair types"],
+    concerns: [
+      "Damaged Hair"
+    ],
+    size: "50 ml",
+    treatments: ["hair"]
+  },
+  "restorist-conditioner": {
+    title: "DermaCo restorist conditioner ",
+    image: "../../ASSETS/images/products/product14.png",
+    description:
+      "DermaCo Restorist Conditioner deeply nourishes and softens dry, damaged hair while reducing breakage and boosting shine. Powered by Abyssinian Oil, Fermented Hair Complex, Hydrolyzed Pea Protein, and Shea Butter, it delivers intense moisture, strengthens hair fibers, and restores smoothness for healthier-looking hair.",
+    ingredients: [
+      "Shea Butter: Deeply moisturizes and softens dry hair while protecting against damage and frizz.",
+      "Panthenol (Pro-Vitamin B5): Hydrates hair, improves smoothness, and adds a healthy-looking shine.",
+      "Sunflower Seed Oil: Helps lock in moisture and protects hair from environmental stressors.",
+      "Guar Conditioning Agents (Guar Hydroxypropyltrimonium Chloride): Improve manageability, detangling, and smoothness."
+
+    ],
+    bestFor: ["All hair types"],
+    concerns: [
+      "Dull Hair","Dry Hair","Damaged Hair","Frizzy Hair","Lack Of Shine"
+    ],
+    size: "200 ml",
+    treatments: ["hair"]
+  },
+  "restorist-shampoo": {
+    title: "DermaCo restorist shampoo",
+    image: "../../ASSETS/images/products/product15.png",
+    description:
+      "Revive dry and damaged hair with DermaCo Restorist Hair Shampoo. This sulfate- and silicone-free formula gently cleanses while restoring lost moisture and strength. Powered by Abyssinian Oil and a Fermented Hair Complex, it helps nourish the scalp, reinforce weak strands, and improve overall hair texture. Hair feels softer, healthier, and visibly revitalized with every wash—without weighing it down.",
+    ingredients: [
+      "Vitamin B5 (Panthenol): Provides long-lasting hydration, smoothens hair texture, and enhances shine while reducing dryness.",
+      "Glycerin & Propylene Glycol: Humectants that attract and retain moisture, keeping hair soft and hydrated..",
+      "Linseed & Chia Seed Extracts: Help strengthen hair structure and improve hair elasticity and smoothness.",
+      "Citric Acid & EDTA: Help maintain product stability and support scalp-friendly pH balance."
+
+    ],
+    bestFor: ["All hair types"],
+    concerns: [
+      "Dull Hair","Dry Hair","Damaged Hair","Frizzy Hair"
+    ],
+    size: "250 ml",
+    treatments: ["hair"]
+  },
+  "restorist-shampoo": {
+    title: "DermaCo 3% Redensyl, 4% Anagain & 5% Capilia Stem Cell Complex Advanced Hair Growth Serum",
+    image: "../../ASSETS/images/products/product16.png",
+    description:
+      "Advanced Hair Growth Serum 2.0 is a clinically tested formula proven to promote new hair growth in just 28 days. Powered by 3% Redensyl, 4% Anagain, and 5% Capilia Stem Cell Complex, it helps rebalance the hair growth cycle to reduce hair fall and support thicker, fuller-looking hair. Enhanced with 12 advanced hair growth boosters and penetration enhancers, this lightweight serum delivers faster, deeper results for visibly healthier hair.",
+    ingredients: [
+      "Redensyl (3%): A clinically proven hair growth active that helps reactivate hair follicles and reduce hair fall.",
+      "Anagain (4%): Supports the natural hair growth cycle by stimulating hair roots and promoting denser hair.",
+      "Capilia Stem Cell Complex (5%): Strengthens hair follicles and helps improve hair thickness and vitality.",
+      "Korean Black Rice Extract: Rich in antioxidants that nourish the scalp and support stronger, healthier hair growth."
+
+    ],
+    bestFor: ["All hair types"],
+    concerns: [
+      "Dull Hair","Dry Hair","Damaged Hair","Frizzy Hair"
+    ],
+    size: "250 ml",
+    treatments: ["hair"]
+  },
 
 
 };

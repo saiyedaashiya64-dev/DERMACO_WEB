@@ -376,6 +376,9 @@ function loadPage(page) {
       if (page.includes("eye_circle")) {
         renderProductsByTreatment("eye-circle");
       }
+      if (page.includes("hair")) {
+        renderProductsByTreatment("hair");
+      }
 
 
     });
