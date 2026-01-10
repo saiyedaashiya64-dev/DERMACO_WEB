@@ -317,6 +317,61 @@ const PRODUCTS = {
     size: "250 ml",
     treatments: ["hair"]
   },
+  "Brightening-Serum": {
+    title: "DermaCo Fade Away Brightening Serum",
+    image: "../../ASSETS/images/products/product18.png",
+    description:
+      "A gentle brightening serum with Alpha Arbutin, Kojic Acid & Licorice Root that visibly reduces dark spots and evens skin tone—without irritation.",
+    ingredients: [
+      "Kojic Acid – Targets uneven tone and stubborn marks",
+      "Alpha Arbutin – Helps reduce excess melanin to visibly fade dark spots and pigmentation",
+      "Red Algae Extract – Helps protect skin from UV-induced pigmentation.",
+      
+
+    ],
+    bestFor: ["Oily Skin","Combination Skin","Normal Skin"],
+    concerns: [
+      "Dull Skin","Age spots","Uneven skin tone","Dark Spots","Pigmentation"
+    ],
+    size: "50 ml",
+    treatments: ["brightening"]
+  },
+  "Brightening-duo": {
+    title: "DermaCo Brighten and Smooth Duo",
+    image: "../../ASSETS/images/products/product19.png",
+    description:
+      "A powerful day-and-night regimen designed to visibly brighten skin, smooth texture, and refine pores. The Vitamin C serum works during the day to boost radiance and even out skin tone, while the Glycolic Acid cream renews skin overnight by gently exfoliating and improving texture. With consistent use, skin looks clearer, smoother, and more luminous in as little as 100 days.",
+    ingredients: [
+      "Glow Maker (Vitamin C Serum) – L-Ascorbic Acid (15% Vitamin C), Vitamin E, Ferulic Acid, Hyaluronic Acid, Aloe Vera Extract, Vitis Vinifera (Grape) Extract, Magnolia Extract",
+      "Night Renewer (Glycolic Acid Cream) – Glycolic Acid (10%)"
+      
+
+    ],
+    bestFor: ["Dry Skin"],
+    concerns: [
+      "Dark Spots","Pigmentation"
+    ],
+    size: "50 ml , 100ml",
+    treatments: ["brightening"]
+  },
+  "Brightening-BHA-serum": {
+    title: "DermaCo Super Smooth AHA + BHA Resurfacing Serum",
+    image: "../../ASSETS/images/products/product20.png",
+    description:
+      "Super Smooth gently resurfaces skin to reduce texture, bumps, and visible pores—without irritation. Powered by mild exfoliating acids and a skin-smoothing peptide, it clears buildup and refines skin texture, leaving your skin visibly smoother, brighter, and more even with regular use.",
+    ingredients: [
+      "Perfection Peptide P3 (Hexanoyl Dipeptide-3 Norleucine Acetate) – Gently loosens dead skin cells to enable safer, more comfortable exfoliation without irritation",
+      "Lactic Acid – Smooths rough texture and improves skin clarity by exfoliating the skin’s surface",
+      "Glycolic Acid – Refines skin texture and boosts radiance by removing built-up dead skin cells",
+      "Hyaluronic Acid – Hydrates and plumps skin, reducing the risk of irritation and tightness"
+    ],
+    bestFor: ["Dry Skin"],
+    concerns: [
+      "Dark Spots","Pigmentation"
+    ],
+    size: "30 ml",
+    treatments: ["facial"]
+  },
 
 
 };

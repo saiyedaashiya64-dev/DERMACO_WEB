@@ -379,6 +379,13 @@ function loadPage(page) {
       if (page.includes("hair")) {
         renderProductsByTreatment("hair");
       }
+      if (page.toLowerCase().includes("skin_brightening")) {
+        renderProductsByTreatment("brightening");
+      }
+      if (page.toLowerCase().includes("facial")) {
+        renderProductsByTreatment("facial");
+      }
+
 
 
     });
