@@ -1,0 +1,13 @@
+Sender:
+ Email:mysite674@gmail.com
+ Password:qwert@2342
+
+
+ Reciver:
+ Email:darmaco47@gmail.com
+ Password:qwert@2342
+
+
+EmailJs:
+ Email:mysite674@gmail.com
+ Password:qwert@2342
