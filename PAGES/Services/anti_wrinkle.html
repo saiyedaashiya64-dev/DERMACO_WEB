@@ -6,563 +6,593 @@
     <section class="call-to-action">
         <div class="cta-fluid">
             <div class="cta-row">
-                <!-- TALK TO EXPERT TEXT -->
+
                 <div class="cta-title">
                     Talk to Expert
                 </div>
 
-                <!-- INPUTS (DESKTOP ONLY) -->
-                <div class="cta-inputs">
-                    <input type="text" class="form-control" placeholder="Your Name">
-                    <input type="email" class="form-control" placeholder="Your Email">
-                    <input type="text" class="form-control" placeholder="Your Phone">
-                </div>
+                <!-- 🔴 CTA FORM -->
+                <form class="cta-inputs cta-enquiry-form">
 
-                <!-- BUTTON -->
-                <div class="cta-button">
-                    <a class="btn btn-primary open-cta-popup">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+
+                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+
+                    <input type="text" name="phone" class="form-control" placeholder="Your Phone" required>
+
+                    <!-- SOURCE -->
+                    <input type="hidden" name="page" value="Anti-Wrinkle Treatment Page">
+                    <button type="button" class="btn btn-primary open-cta-popup cta-submit-btn">
                         Book Appointment
-                    </a>
-                </div>
+                    </button>
+                </form>
+
+
+
             </div>
         </div>
     </section>
+
+
+
+    <!-- CTA POPUP -->
     <div class="cta-popup-overlay">
         <div class="cta-popup">
+
             <span class="cta-close">&times;</span>
+
             <h4>Talk to Expert</h4>
-            <input type="text" class="form-control mb-3" placeholder="Your Name">
-            <input type="email" class="form-control mb-3" placeholder="Your Email">
-            <input type="text" class="form-control mb-3" placeholder="Your Phone">
-            <button class="btn btn-primary btn-block">Submit</button>
+
+            <form class="cta-enquiry-form">
+
+                <input type="text" name="name" class="form-control mb-3" placeholder="Your Name" required>
+                <input type="email" name="email" class="form-control mb-3" placeholder="Your Email" required>
+                <input type="text" name="phone" class="form-control mb-3" placeholder="Your Phone" required>
+
+                <input type="hidden" name="page" value="Service CTA Popup">
+
+                <!-- ✅ BUTTON TYPE -->
+                <button type="button" class="btn btn-primary btn-block cta-submit-btn">
+                    Submit
+                </button>
+
+            </form>
+
         </div>
     </div>
-    <section class="acne-tabs">
-
-        <div class="container">
-
-            <div class="tab-buttons">
-                <button class="tab-btn active" data-tab="tab1">Anti Wrinkle Treatment: Smooth, Youthful Skin</button>
-                <button class="tab-btn" data-tab="tab2">Types of Wrinkles You Should Know About</button>
-                <button class="tab-btn" data-tab="tab3"> Botulinum Toxin Injections: The Gold Standard for Dynamic
-                    Wrinkles</button>
-                <button class="tab-btn" data-tab="tab4">Lifestyle Tips for Long-Term Wrinkle Prevention</button>
-                <button class="tab-btn" data-tab="tab5">The Journey with Derma Co</button>
-                <button class="tab-btn" data-tab="tab6">Frequently Asked Questions</button>
-            </div>
-            <section class="derma-hero">
-
-                <div class="container">
-                    <div class="tab-content">
-
-                        <div class="tab-pane active" id="tab1">
 
 
-                            <h1 class="section-title">
-                                Anti Wrinkle Treatment: Smooth, Youthful Skin
-                            </h1>
+</section>
+<section class="acne-tabs">
 
-                            <p class="hero-desc">
-                                Anti-wrinkle treatments offer effective solutions for fine lines and wrinkles using
-                                advanced
-                                dermatological science. These procedures combine cutting-edge technology with expert
-                                care to deliver
-                                visible, long-lasting results. Treatment options include botulinum toxin injections,
-                                dermal fillers,
-                                chemical peels, and laser therapies, all customized to address individual aging concerns
-                                and help
-                                achieve smoother, more youthful-looking skin.
-                            </p>
+    <div class="container">
 
-                            <h3 class="hero-subtitle">
-                                Understanding Wrinkles and the Science of Aging Skin
-                            </h3>
+        <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="tab1">Anti Wrinkle Treatment: Smooth, Youthful Skin</button>
+            <button class="tab-btn" data-tab="tab2">Types of Wrinkles You Should Know About</button>
+            <button class="tab-btn" data-tab="tab3"> Botulinum Toxin Injections: The Gold Standard for Dynamic
+                Wrinkles</button>
+            <button class="tab-btn" data-tab="tab4">Lifestyle Tips for Long-Term Wrinkle Prevention</button>
+            <button class="tab-btn" data-tab="tab5">The Journey with Derma Co</button>
+            <button class="tab-btn" data-tab="tab6">Frequently Asked Questions</button>
+        </div>
+        <section class="derma-hero">
 
-                            <p class="hero-desc">
-                                Wrinkles develop as the skin gradually loses elasticity and volume with age.
-                                Understanding these
-                                biological changes helps guide effective treatment and prevention strategies.
-                            </p>
-                            <h3 class="hero-subtitle">
-                                The Biology of Wrinkle Formation
-                            </h3>
-                            <p class="hero-desc">
-                                Skin is made up of three layers—the epidermis, dermis, and hypodermis. The dermis
-                                contains collagen and
-                                elastin, which maintain skin strength and elasticity. From our 20s, collagen production
-                                declines by
-                                about 1% each year, becoming more noticeable in the 40s and 50s as wrinkles and sagging
-                                appear. This
-                                process is accelerated by collagen breakdown, repetitive facial movements, sun exposure,
-                                and pollution.
-                            </p>
-                        </div>
-                        <div class="tab-pane active" id="tab2">
+            <div class="container">
+                <div class="tab-content">
+
+                    <div class="tab-pane active" id="tab1">
 
 
-                            <h1 class="section-title">
-                                Types of Wrinkles You Should Know About
-                            </h1>
+                        <h1 class="section-title">
+                            Anti Wrinkle Treatment: Smooth, Youthful Skin
+                        </h1>
 
-                            <p class="hero-desc">
-                                Wrinkles generally fall into two main categories, each requiring different treatment
-                                approaches:
-                            </p>
+                        <p class="hero-desc">
+                            Anti-wrinkle treatments offer effective solutions for fine lines and wrinkles using
+                            advanced
+                            dermatological science. These procedures combine cutting-edge technology with expert
+                            care to deliver
+                            visible, long-lasting results. Treatment options include botulinum toxin injections,
+                            dermal fillers,
+                            chemical peels, and laser therapies, all customized to address individual aging concerns
+                            and help
+                            achieve smoother, more youthful-looking skin.
+                        </p>
 
-                            <h3 class="hero-subtitle">
-                                Dynamic Wrinkles:
-                            </h3>
-                            <p class="hero-desc">
-                                These form due to repeated facial movements such as smiling, frowning, or squinting.
-                                Common examples
-                                include crow’s feet, frown lines, and forehead lines. Dynamic wrinkles respond well to
-                                muscle-relaxing
-                                treatments like botulinum toxin injections.
-                            </p>
-                            <h3 class="hero-subtitle">
-                                Static Wrinkles:
-                            </h3>
-                            <p class="hero-desc">
-                                Visible even at rest, static wrinkles result from loss of skin elasticity, volume, and
-                                support. Common
-                                examples include nasolabial folds and marionette lines. These are typically treated with
-                                volume-restoring solutions such as dermal fillers.
-                            </p>
-                            <h1 class="section-title">
-                                Advanced Anti-Wrinkle Treatments at DermaCo.'s Clinic
-                            </h1>
+                        <h3 class="hero-subtitle">
+                            Understanding Wrinkles and the Science of Aging Skin
+                        </h3>
 
-                            <p class="hero-desc">
-                                A comprehensive range of anti-wrinkle treatments is offered to address different wrinkle
-                                types and aging
-                                concerns. Dermatologist-guided plans are customized based on skin condition, age, and
-                                desired results.
-                            </p>
-                        </div>
-                        <div class="tab-pane active" id="tab3">
+                        <p class="hero-desc">
+                            Wrinkles develop as the skin gradually loses elasticity and volume with age.
+                            Understanding these
+                            biological changes helps guide effective treatment and prevention strategies.
+                        </p>
+                        <h3 class="hero-subtitle">
+                            The Biology of Wrinkle Formation
+                        </h3>
+                        <p class="hero-desc">
+                            Skin is made up of three layers—the epidermis, dermis, and hypodermis. The dermis
+                            contains collagen and
+                            elastin, which maintain skin strength and elasticity. From our 20s, collagen production
+                            declines by
+                            about 1% each year, becoming more noticeable in the 40s and 50s as wrinkles and sagging
+                            appear. This
+                            process is accelerated by collagen breakdown, repetitive facial movements, sun exposure,
+                            and pollution.
+                        </p>
+                    </div>
+                    <div class="tab-pane active" id="tab2">
 
-                            <h1 class="section-title">
-                                Botulinum Toxin Injections: The Gold Standard for Dynamic Wrinkles
-                            </h1>
-                            <p class="hero-desc">
-                                Anti-wrinkle injections using botulinum toxin are one of the most popular and effective
-                                treatments for
-                                dynamic wrinkles. This neurotoxin works by temporarily relaxing the facial muscles
-                                responsible for
-                                creating expression lines.
-                            </p>
-                            <h3 class="hero-subtitle">
-                                How Anti-Wrinkle Injections Work
-                            </h3>
-                            <p class="hero-desc">
-                                The botulinum toxin is precisely injected into targeted facial muscles where it blocks
-                                the nerve signals
-                                that cause muscle contractions. By relaxing these muscles, the skin above them smooths
-                                out, reducing the
-                                appearance of dynamic wrinkles such as crow's feet, frown lines, and forehead lines. The
-                                procedure is
-                                quick (typically 15-30 minutes), minimally invasive, and requires no downtime.
-                            </p>
-                            <ul class="info-points">
-                                <li>Visible reduction in dynamic wrinkles within 3-7 days</li>
-                                <li>Preventive effect against the formation of deeper, permanent wrinkles</li>
-                                <li>Natural-looking results when administered by skilled professionals</li>
-                                <li>Temporary effects (3-6 months), allowing for adjustments as your face changes over
-                                    time</li>
-                            </ul>
-                            <h3 class="hero-subtitle">
-                                Ideal Candidates for Anti-Wrinkle Injections
-                            </h3>
-                            <p class="hero-desc">
-                                Anti-wrinkle injections are suitable for adults with dynamic wrinkles who want to
-                                achieve a smoother,
-                                more youthful appearance without surgery. They are particularly effective for:
-                            </p>
-                            <ul class="info-points">
-                                <li>Forehead lines</li>
-                                <li>Frown lines between the eyebrows (glabellar lines)</li>
-                                <li>Crow's feet around the eyes</li>
-                                <li>Bunny lines on the nose</li>
-                            </ul>
-                            <h1 class="section-title">
-                                Dermal Fillers: Restoring Volume and Smoothing Wrinkles
-                            </h1>
-                            <p class="hero-desc">
-                                Dermal fillers restore lost volume, smooth static wrinkles, and enhance facial contours.
-                                Unlike
-                                muscle-relaxing injections, fillers fill wrinkles from beneath the skin.
-                            </p>
-                            <h3 class="hero-subtitle">
-                                Types of Fillers:
-                            </h3>
 
-                            <ul class="info-points">
-                                <li>Hyaluronic Acid: Provides immediate volume and hydration; ideal for nasolabial
-                                    folds, marionette
-                                    lines, lips, and cheeks.</li>
-                                <li>Calcium Hydroxylapatite: Stimulates collagen and provides volume; suited for deeper
-                                    wrinkles.</li>
-                                <li>Poly-L-Lactic Acid: Gradually stimulates collagen for natural, long-lasting results.
-                                </li>
-                            </ul>
-                            <p class="hero-desc">
-                                Benefits: Immediate wrinkle improvement, natural-looking volume, enhanced contours,
-                                minimal downtime,
-                                lasting 6–24 months.
-                            </p>
-                            <p class="hero-desc">
-                                Ideal Areas: Nasolabial folds, marionette lines, lips, cheeks, temples, under-eye
-                                hollows, jawline.
-                            </p>
-                            <h1 class="section-title">
-                                Chemical Peels: Renewing the Skin Surface
-                            </h1>
-                            <p class="hero-desc">
-                                Chemical peels exfoliate the outer skin layers to reveal smoother, fresher skin,
-                                addressing fine lines,
-                                uneven tone, and sun damage.
-                            </p>
-                            <h3 class="hero-subtitle">
-                                Types:
-                            </h3>
+                        <h1 class="section-title">
+                            Types of Wrinkles You Should Know About
+                        </h1>
 
-                            <ul class="info-points">
-                                <li>Superficial Peels: Mild acids for gentle exfoliation and improved texture.</li>
-                                <li>Medium Peels: TCA or higher-strength acids for moderate wrinkles and sun damage.
-                                </li>
-                                <li>Deep Peels: Phenol or strong TCA for deep wrinkles and significant skin damage.</li>
-                            </ul>
-                            <p class="hero-desc">
-                                Benefits: Improved texture and tone, reduced fine lines, collagen stimulation, radiance,
-                                even skin tone.
-                            </p>
-                            <h1 class="section-title">Laser Treatments</h1>
-                            <p class="hero-desc">
-                                Lasers target aging concerns, stimulate collagen, and rejuvenate skin. Treatments are
-                                tailored to skin
-                                type and wrinkle severity.
-                            </p>
-                            <h3 class="hero-subtitle">Types</h3>
-                            <ul class="info-points">
-                                <li>Fractional Laser Resurfacing: Stimulates collagen with minimal downtime</li>
-                                <li>Non-Ablative Lasers: Heat underlying skin to firm and smooth</li>
-                                <li>Ablative Lasers: Remove outer skin layers to treat deep wrinkles</li>
-                            </ul>
-                            <h1 class="section-title">Consultation and Personalized Plan</h1>
-                            <p class="hero-desc">
-                                Dermatologists assess skin type, wrinkle severity, and aging factors to create
-                                customized plans
-                                including primary and complementary treatments, schedules, and long-term maintenance.
-                            </p>
+                        <p class="hero-desc">
+                            Wrinkles generally fall into two main categories, each requiring different treatment
+                            approaches:
+                        </p>
 
-                            <h1 class="section-title">Pre-Treatment Preparation</h1>
-                            <ul class="info-points">
-                                <li>Avoid sun exposure; use SPF 30+ for 2 weeks</li>
-                                <li>Pause retinoids and exfoliating acids 5–7 days before</li>
-                                <li>Consult on avoiding blood-thinning medications</li>
-                                <li>Maintain hydration</li>
-                                <li>Arrive with clean, product-free skin</li>
-                            </ul>
-                            <h1 class="section-title">Treatment Experience</h1>
-                            <ul class="info-points">
-                                <li>Botulinum injections: 15–30 mins, minimal discomfort</li>
-                                <li>Dermal fillers: 30–60 mins, topical anesthetic optional</li>
-                                <li>Chemical peels: 30–45 mins, tingling normal</li>
-                                <li>Laser sessions: 30–90 mins, mild warmth or snapping sensation</li>
-                            </ul>
+                        <h3 class="hero-subtitle">
+                            Dynamic Wrinkles:
+                        </h3>
+                        <p class="hero-desc">
+                            These form due to repeated facial movements such as smiling, frowning, or squinting.
+                            Common examples
+                            include crow’s feet, frown lines, and forehead lines. Dynamic wrinkles respond well to
+                            muscle-relaxing
+                            treatments like botulinum toxin injections.
+                        </p>
+                        <h3 class="hero-subtitle">
+                            Static Wrinkles:
+                        </h3>
+                        <p class="hero-desc">
+                            Visible even at rest, static wrinkles result from loss of skin elasticity, volume, and
+                            support. Common
+                            examples include nasolabial folds and marionette lines. These are typically treated with
+                            volume-restoring solutions such as dermal fillers.
+                        </p>
+                        <h1 class="section-title">
+                            Advanced Anti-Wrinkle Treatments at DermaCo.'s Clinic
+                        </h1>
 
-                            <h1 class="section-title">Post-Treatment Care</h1>
-                            <ul class="info-points">
-                                <li>Daily sunscreen; avoid direct sun for at least a week</li>
-                                <li>Use gentle cleansers and moisturizers; avoid retinoids/acids until healed</li>
-                                <li>Hydrate and use cold compresses if needed</li>
-                                <li>Avoid strenuous activity, hot showers, saunas, alcohol for 24–48 hrs</li>
-                                <li>Attend follow-up appointments</li>
-                            </ul>
-                        </div>
+                        <p class="hero-desc">
+                            A comprehensive range of anti-wrinkle treatments is offered to address different wrinkle
+                            types and aging
+                            concerns. Dermatologist-guided plans are customized based on skin condition, age, and
+                            desired results.
+                        </p>
+                    </div>
+                    <div class="tab-pane active" id="tab3">
 
-                        <div class="tab-pane active" id="tab4">
-                            <h1 class="section-title">Lifestyle Tips for Long-Term Wrinkle Prevention</h1>
-                            <p class="hero-desc">
-                                Professional anti-wrinkle treatments provide significant improvements, but
-                                maintaining
-                                results and
-                                preventing new wrinkles requires a holistic approach to skin health and overall
-                                wellbeing.
-                            </p>
+                        <h1 class="section-title">
+                            Botulinum Toxin Injections: The Gold Standard for Dynamic Wrinkles
+                        </h1>
+                        <p class="hero-desc">
+                            Anti-wrinkle injections using botulinum toxin are one of the most popular and effective
+                            treatments for
+                            dynamic wrinkles. This neurotoxin works by temporarily relaxing the facial muscles
+                            responsible for
+                            creating expression lines.
+                        </p>
+                        <h3 class="hero-subtitle">
+                            How Anti-Wrinkle Injections Work
+                        </h3>
+                        <p class="hero-desc">
+                            The botulinum toxin is precisely injected into targeted facial muscles where it blocks
+                            the nerve signals
+                            that cause muscle contractions. By relaxing these muscles, the skin above them smooths
+                            out, reducing the
+                            appearance of dynamic wrinkles such as crow's feet, frown lines, and forehead lines. The
+                            procedure is
+                            quick (typically 15-30 minutes), minimally invasive, and requires no downtime.
+                        </p>
+                        <ul class="info-points">
+                            <li>Visible reduction in dynamic wrinkles within 3-7 days</li>
+                            <li>Preventive effect against the formation of deeper, permanent wrinkles</li>
+                            <li>Natural-looking results when administered by skilled professionals</li>
+                            <li>Temporary effects (3-6 months), allowing for adjustments as your face changes over
+                                time</li>
+                        </ul>
+                        <h3 class="hero-subtitle">
+                            Ideal Candidates for Anti-Wrinkle Injections
+                        </h3>
+                        <p class="hero-desc">
+                            Anti-wrinkle injections are suitable for adults with dynamic wrinkles who want to
+                            achieve a smoother,
+                            more youthful appearance without surgery. They are particularly effective for:
+                        </p>
+                        <ul class="info-points">
+                            <li>Forehead lines</li>
+                            <li>Frown lines between the eyebrows (glabellar lines)</li>
+                            <li>Crow's feet around the eyes</li>
+                            <li>Bunny lines on the nose</li>
+                        </ul>
+                        <h1 class="section-title">
+                            Dermal Fillers: Restoring Volume and Smoothing Wrinkles
+                        </h1>
+                        <p class="hero-desc">
+                            Dermal fillers restore lost volume, smooth static wrinkles, and enhance facial contours.
+                            Unlike
+                            muscle-relaxing injections, fillers fill wrinkles from beneath the skin.
+                        </p>
+                        <h3 class="hero-subtitle">
+                            Types of Fillers:
+                        </h3>
 
-                            <h3 class="hero-subtitle">Effective Anti-Aging Skincare Routine</h3>
-                            <ul class="info-points">
-                                <li><strong>Cleansing:</strong> Use a gentle cleanser morning and evening to remove
-                                    impurities without
-                                    stripping natural oils.</li>
-                                <li><strong>Antioxidant Protection:</strong> Apply vitamin C serum in the morning to
-                                    neutralize free
-                                    radicals and boost collagen.</li>
-                                <li><strong>Moisturization:</strong> Use a hydrating moisturizer with hyaluronic
-                                    acid,
-                                    ceramides, or
-                                    glycerin.</li>
-                                <li><strong>Sun Protection:</strong> Apply broad-spectrum SPF 30+ daily and reapply
-                                    every two hours
-                                    outdoors.</li>
-                                <li><strong>Retinoids:</strong> Incorporate a retinoid in your evening routine to
-                                    stimulate collagen and
-                                    cell turnover.</li>
-                                <li><strong>Eye Care:</strong> Use a specialized eye cream for the delicate
-                                    under-eye
-                                    area.</li>
-                            </ul>
-                            <h3 class="hero-subtitle">Nutrition and Hydration for Skin Health</h3>
-                            <ul class="info-points">
-                                <li><strong>Antioxidant-Rich Foods:</strong> Eat colorful fruits and vegetables to
-                                    fight
-                                    free radical
-                                    damage.</li>
-                                <li><strong>Omega-3 Fatty Acids:</strong> Include fatty fish, flaxseeds, and walnuts
-                                    to
-                                    support the
-                                    skin's lipid barrier.</li>
-                                <li><strong>Protein Intake:</strong> Adequate protein provides building blocks for
-                                    collagen and elastin.
-                                </li>
-                                <li><strong>Hydration:</strong> Drink at least 8 glasses of water daily to maintain
-                                    skin
-                                    hydration from
-                                    within.</li>
-                                <li><strong>Limit Sugar & Processed Foods:</strong> Reduce high-glycemic foods that
-                                    accelerate skin
-                                    aging.</li>
-                            </ul>
+                        <ul class="info-points">
+                            <li>Hyaluronic Acid: Provides immediate volume and hydration; ideal for nasolabial
+                                folds, marionette
+                                lines, lips, and cheeks.</li>
+                            <li>Calcium Hydroxylapatite: Stimulates collagen and provides volume; suited for deeper
+                                wrinkles.</li>
+                            <li>Poly-L-Lactic Acid: Gradually stimulates collagen for natural, long-lasting results.
+                            </li>
+                        </ul>
+                        <p class="hero-desc">
+                            Benefits: Immediate wrinkle improvement, natural-looking volume, enhanced contours,
+                            minimal downtime,
+                            lasting 6–24 months.
+                        </p>
+                        <p class="hero-desc">
+                            Ideal Areas: Nasolabial folds, marionette lines, lips, cheeks, temples, under-eye
+                            hollows, jawline.
+                        </p>
+                        <h1 class="section-title">
+                            Chemical Peels: Renewing the Skin Surface
+                        </h1>
+                        <p class="hero-desc">
+                            Chemical peels exfoliate the outer skin layers to reveal smoother, fresher skin,
+                            addressing fine lines,
+                            uneven tone, and sun damage.
+                        </p>
+                        <h3 class="hero-subtitle">
+                            Types:
+                        </h3>
 
-                            <h3 class="hero-subtitle">Lifestyle Habits for Youthful Skin</h3>
-                            <ul class="info-points">
-                                <li><strong>Quit Smoking:</strong> Tobacco accelerates skin aging and collagen
-                                    breakdown.</li>
-                                <li><strong>Manage Stress:</strong> Meditation, yoga, or deep breathing helps reduce
-                                    cortisol and
-                                    protect collagen.</li>
-                                <li><strong>Prioritize Sleep:</strong> Aim for 7–9 hours for optimal skin repair and
-                                    regeneration.</li>
-                                <li><strong>Exercise Regularly:</strong> Improves circulation and nutrient delivery
-                                    to
-                                    skin cells.</li>
-                                <li><strong>Facial Exercises:</strong> Facial yoga can strengthen muscles and
-                                    improve
-                                    skin tone.</li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane active" id="tab5">
+                        <ul class="info-points">
+                            <li>Superficial Peels: Mild acids for gentle exfoliation and improved texture.</li>
+                            <li>Medium Peels: TCA or higher-strength acids for moderate wrinkles and sun damage.
+                            </li>
+                            <li>Deep Peels: Phenol or strong TCA for deep wrinkles and significant skin damage.</li>
+                        </ul>
+                        <p class="hero-desc">
+                            Benefits: Improved texture and tone, reduced fine lines, collagen stimulation, radiance,
+                            even skin tone.
+                        </p>
+                        <h1 class="section-title">Laser Treatments</h1>
+                        <p class="hero-desc">
+                            Lasers target aging concerns, stimulate collagen, and rejuvenate skin. Treatments are
+                            tailored to skin
+                            type and wrinkle severity.
+                        </p>
+                        <h3 class="hero-subtitle">Types</h3>
+                        <ul class="info-points">
+                            <li>Fractional Laser Resurfacing: Stimulates collagen with minimal downtime</li>
+                            <li>Non-Ablative Lasers: Heat underlying skin to firm and smooth</li>
+                            <li>Ablative Lasers: Remove outer skin layers to treat deep wrinkles</li>
+                        </ul>
+                        <h1 class="section-title">Consultation and Personalized Plan</h1>
+                        <p class="hero-desc">
+                            Dermatologists assess skin type, wrinkle severity, and aging factors to create
+                            customized plans
+                            including primary and complementary treatments, schedules, and long-term maintenance.
+                        </p>
 
-                            <section class="journey-section">
-                                <div class="container">
+                        <h1 class="section-title">Pre-Treatment Preparation</h1>
+                        <ul class="info-points">
+                            <li>Avoid sun exposure; use SPF 30+ for 2 weeks</li>
+                            <li>Pause retinoids and exfoliating acids 5–7 days before</li>
+                            <li>Consult on avoiding blood-thinning medications</li>
+                            <li>Maintain hydration</li>
+                            <li>Arrive with clean, product-free skin</li>
+                        </ul>
+                        <h1 class="section-title">Treatment Experience</h1>
+                        <ul class="info-points">
+                            <li>Botulinum injections: 15–30 mins, minimal discomfort</li>
+                            <li>Dermal fillers: 30–60 mins, topical anesthetic optional</li>
+                            <li>Chemical peels: 30–45 mins, tingling normal</li>
+                            <li>Laser sessions: 30–90 mins, mild warmth or snapping sensation</li>
+                        </ul>
 
-                                    <h2 class="section-title">The Journey with Derma Co</h2>
+                        <h1 class="section-title">Post-Treatment Care</h1>
+                        <ul class="info-points">
+                            <li>Daily sunscreen; avoid direct sun for at least a week</li>
+                            <li>Use gentle cleansers and moisturizers; avoid retinoids/acids until healed</li>
+                            <li>Hydrate and use cold compresses if needed</li>
+                            <li>Avoid strenuous activity, hot showers, saunas, alcohol for 24–48 hrs</li>
+                            <li>Attend follow-up appointments</li>
+                        </ul>
+                    </div>
 
-                                    <div class="journey-wrapper">
+                    <div class="tab-pane active" id="tab4">
+                        <h1 class="section-title">Lifestyle Tips for Long-Term Wrinkle Prevention</h1>
+                        <p class="hero-desc">
+                            Professional anti-wrinkle treatments provide significant improvements, but
+                            maintaining
+                            results and
+                            preventing new wrinkles requires a holistic approach to skin health and overall
+                            wellbeing.
+                        </p>
 
-                                        <div class="journey-step">
-                                            <div class="journey-icon">👨‍⚕️</div>
-                                            <div class="journey-content">
-                                                <h4>Consultation</h4>
-                                                <p>
-                                                    Begin with a thorough consultation where dermatologists assess your
-                                                    skin, wrinkle
-                                                    type, and
-                                                    severity. Your goals and expectations are discussed to guide
-                                                    treatment
-                                                    recommendations.
-                                                </p>
-                                            </div>
+                        <h3 class="hero-subtitle">Effective Anti-Aging Skincare Routine</h3>
+                        <ul class="info-points">
+                            <li><strong>Cleansing:</strong> Use a gentle cleanser morning and evening to remove
+                                impurities without
+                                stripping natural oils.</li>
+                            <li><strong>Antioxidant Protection:</strong> Apply vitamin C serum in the morning to
+                                neutralize free
+                                radicals and boost collagen.</li>
+                            <li><strong>Moisturization:</strong> Use a hydrating moisturizer with hyaluronic
+                                acid,
+                                ceramides, or
+                                glycerin.</li>
+                            <li><strong>Sun Protection:</strong> Apply broad-spectrum SPF 30+ daily and reapply
+                                every two hours
+                                outdoors.</li>
+                            <li><strong>Retinoids:</strong> Incorporate a retinoid in your evening routine to
+                                stimulate collagen and
+                                cell turnover.</li>
+                            <li><strong>Eye Care:</strong> Use a specialized eye cream for the delicate
+                                under-eye
+                                area.</li>
+                        </ul>
+                        <h3 class="hero-subtitle">Nutrition and Hydration for Skin Health</h3>
+                        <ul class="info-points">
+                            <li><strong>Antioxidant-Rich Foods:</strong> Eat colorful fruits and vegetables to
+                                fight
+                                free radical
+                                damage.</li>
+                            <li><strong>Omega-3 Fatty Acids:</strong> Include fatty fish, flaxseeds, and walnuts
+                                to
+                                support the
+                                skin's lipid barrier.</li>
+                            <li><strong>Protein Intake:</strong> Adequate protein provides building blocks for
+                                collagen and elastin.
+                            </li>
+                            <li><strong>Hydration:</strong> Drink at least 8 glasses of water daily to maintain
+                                skin
+                                hydration from
+                                within.</li>
+                            <li><strong>Limit Sugar & Processed Foods:</strong> Reduce high-glycemic foods that
+                                accelerate skin
+                                aging.</li>
+                        </ul>
+
+                        <h3 class="hero-subtitle">Lifestyle Habits for Youthful Skin</h3>
+                        <ul class="info-points">
+                            <li><strong>Quit Smoking:</strong> Tobacco accelerates skin aging and collagen
+                                breakdown.</li>
+                            <li><strong>Manage Stress:</strong> Meditation, yoga, or deep breathing helps reduce
+                                cortisol and
+                                protect collagen.</li>
+                            <li><strong>Prioritize Sleep:</strong> Aim for 7–9 hours for optimal skin repair and
+                                regeneration.</li>
+                            <li><strong>Exercise Regularly:</strong> Improves circulation and nutrient delivery
+                                to
+                                skin cells.</li>
+                            <li><strong>Facial Exercises:</strong> Facial yoga can strengthen muscles and
+                                improve
+                                skin tone.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane active" id="tab5">
+
+                        <section class="journey-section">
+                            <div class="container">
+
+                                <h2 class="section-title">The Journey with Derma Co</h2>
+
+                                <div class="journey-wrapper">
+
+                                    <div class="journey-step">
+                                        <div class="journey-icon">👨‍⚕️</div>
+                                        <div class="journey-content">
+                                            <h4>Consultation</h4>
+                                            <p>
+                                                Begin with a thorough consultation where dermatologists assess your
+                                                skin, wrinkle
+                                                type, and
+                                                severity. Your goals and expectations are discussed to guide
+                                                treatment
+                                                recommendations.
+                                            </p>
                                         </div>
-
-                                        <div class="journey-step">
-                                            <div class="journey-icon">📋</div>
-                                            <div class="journey-content">
-                                                <h4>Pre-Preparation</h4>
-                                                <p>Advanced diagnostics evaluate skin texture, elasticity, and
-                                                    underlying structures,
-                                                    allowing
-                                                    creation of a personalized treatment plan.A tailored combination of
-                                                    technologies and
-                                                    products for your needs.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="journey-step">
-                                            <div class="journey-icon">💉</div>
-                                            <div class="journey-content">
-                                                <h4>Treatment</h4>
-                                                <p>
-                                                    Anti-wrinkle procedures are performed with precision in a
-                                                    comfortable, hygienic
-                                                    environment
-                                                    using the latest dermatological techniques.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="journey-step">
-                                            <div class="journey-icon">🧴</div>
-                                            <div class="journey-content">
-                                                <h4>Post-Procedure Care</h4>
-                                                <p>
-                                                    Receive detailed guidance on skincare, lifestyle adjustments, and
-                                                    follow-up
-                                                    appointments to
-                                                    maintain results and ensure proper healing.
-                                                </p>
-                                            </div>
-                                        </div>
-
                                     </div>
+
+                                    <div class="journey-step">
+                                        <div class="journey-icon">📋</div>
+                                        <div class="journey-content">
+                                            <h4>Pre-Preparation</h4>
+                                            <p>Advanced diagnostics evaluate skin texture, elasticity, and
+                                                underlying structures,
+                                                allowing
+                                                creation of a personalized treatment plan.A tailored combination of
+                                                technologies and
+                                                products for your needs.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="journey-step">
+                                        <div class="journey-icon">💉</div>
+                                        <div class="journey-content">
+                                            <h4>Treatment</h4>
+                                            <p>
+                                                Anti-wrinkle procedures are performed with precision in a
+                                                comfortable, hygienic
+                                                environment
+                                                using the latest dermatological techniques.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="journey-step">
+                                        <div class="journey-icon">🧴</div>
+                                        <div class="journey-content">
+                                            <h4>Post-Procedure Care</h4>
+                                            <p>
+                                                Receive detailed guidance on skincare, lifestyle adjustments, and
+                                                follow-up
+                                                appointments to
+                                                maintain results and ensure proper healing.
+                                            </p>
+                                        </div>
+                                    </div>
+
                                 </div>
-                            </section>
+                            </div>
+                        </section>
 
-                            <h1 class="section-title">Why Choose DermaCo. for Your Anti-Wrinkle Treatment?</h1>
+                        <h1 class="section-title">Why Choose DermaCo. for Your Anti-Wrinkle Treatment?</h1>
 
-                            <h3 class="hero-subtitle">Unmatched Expertise and Experience</h3>
-                            <p class="hero-desc">
-                                DermaCo. is your premier destination for smoother, more youthful-looking skin. With
-                                decades of
-                                expertise, a team of skilled dermatologists, and a legacy of serving countless satisfied
-                                clients, we set
-                                the standard for excellence in anti-wrinkle treatments.
-                            </p>
+                        <h3 class="hero-subtitle">Unmatched Expertise and Experience</h3>
+                        <p class="hero-desc">
+                            DermaCo. is your premier destination for smoother, more youthful-looking skin. With
+                            decades of
+                            expertise, a team of skilled dermatologists, and a legacy of serving countless satisfied
+                            clients, we set
+                            the standard for excellence in anti-wrinkle treatments.
+                        </p>
 
-                            <h3 class="hero-subtitle">Personalized Care Approach</h3>
-                            <p class="hero-desc">
-                                We prioritize your individual needs and aspirations. Through thorough assessments, we
-                                understand your
-                                unique aging concerns and objectives. Anti-wrinkle solutions are meticulously tailored
-                                to your skin type
-                                and requirements, ensuring optimal results.
-                            </p>
-                            <h3 class="hero-subtitle">Trusted Professional Team</h3>
-                            <p class="hero-desc">
-                                DermaCo. stands for trust and reliability in skincare. Our experienced dermatologists
-                                administer
-                                treatments with precision and care, guaranteeing a safe and rewarding experience. With
-                                numerous
-                                satisfied clients and positive testimonials, we have earned the unwavering trust of our
-                                customers.
-                            </p>
-
-                        </div>
-
-
-            </section>
-
-            <!-- DERMATOLOGIST RECOMMENDED PRODUCTS -->
-            <section class="recommended-products">
-
-                <div class="container">
-                    <h2 class="section-sub-title">
-                        Dermatologist Recommended Products
-                    </h2>
-
-                    <div class="product-slider-wrapper">
-
-                        <!-- LEFT ARROW -->
-                        <button class="slider-arrow prev">&#10094;</button>
-
-                        <!-- SLIDER -->
-                        <div class="product-slider" id="productSlider"></div>
-
-                        <!-- RIGHT ARROW -->
-                        <button class="slider-arrow next">&#10095;</button>
+                        <h3 class="hero-subtitle">Personalized Care Approach</h3>
+                        <p class="hero-desc">
+                            We prioritize your individual needs and aspirations. Through thorough assessments, we
+                            understand your
+                            unique aging concerns and objectives. Anti-wrinkle solutions are meticulously tailored
+                            to your skin type
+                            and requirements, ensuring optimal results.
+                        </p>
+                        <h3 class="hero-subtitle">Trusted Professional Team</h3>
+                        <p class="hero-desc">
+                            DermaCo. stands for trust and reliability in skincare. Our experienced dermatologists
+                            administer
+                            treatments with precision and care, guaranteeing a safe and rewarding experience. With
+                            numerous
+                            satisfied clients and positive testimonials, we have earned the unwavering trust of our
+                            customers.
+                        </p>
 
                     </div>
+
+
+        </section>
+
+        <!-- DERMATOLOGIST RECOMMENDED PRODUCTS -->
+        <section class="recommended-products">
+
+            <div class="container">
+                <h2 class="section-sub-title">
+                    Dermatologist Recommended Products
+                </h2>
+
+                <div class="product-slider-wrapper">
+
+                    <!-- LEFT ARROW -->
+                    <button class="slider-arrow prev">&#10094;</button>
+
+                    <!-- SLIDER -->
+                    <div class="product-slider" id="productSlider"></div>
+
+                    <!-- RIGHT ARROW -->
+                    <button class="slider-arrow next">&#10095;</button>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="tab-pane active" id="tab6">
+            <section class="faq-section">
+                <div class="container">
+
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+
+                    <div class="faq-list">
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                What exactly are anti-wrinkle treatments?
+                                <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                Procedures to reduce wrinkles and fine lines, including botulinum toxin injections,
+                                dermal
+                                fillers, chemical peels, and laser therapies, tailored to different wrinkle types.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                How do anti-wrinkle injections work?
+                                <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                Botulinum toxin temporarily relaxes muscles causing dynamic wrinkles (crow’s feet,
+                                frown
+                                lines,
+                                forehead lines), with results in 3–7 days lasting 3–6 months.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Are anti-wrinkle treatments safe?
+                                <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                Treatments are safe when performed by experienced dermatologists using FDA-approved
+                                products and
+                                following strict protocols.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                What is the difference between anti-wrinkle injections and dermal fillers?
+                                <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                Injections relax muscles (dynamic wrinkles), while fillers add volume (static
+                                wrinkles).
+                                Both
+                                can be combined for full facial rejuvenation.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                How long do anti-wrinkle treatments last?
+                                <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                Injections: 3–6 months; Fillers: 6–24 months; Chemical peels and lasers:
+                                long-lasting
+                                with
+                                proper maintenance.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                When is the best time to start anti-wrinkle treatments?
+                                <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                Late 20s or 30s for prevention, but treatments can be effective at any age depending
+                                on
+                                skin
+                                condition and goals.
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </section>
+        </div>
+    </div>
 
-            <div class="tab-pane active" id="tab6">
-                <section class="faq-section">
-                    <div class="container">
-
-                        <h2 class="section-title">Frequently Asked Questions</h2>
-
-                        <div class="faq-list">
-
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    What exactly are anti-wrinkle treatments?
-                                    <span class="faq-icon">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    Procedures to reduce wrinkles and fine lines, including botulinum toxin injections,
-                                    dermal
-                                    fillers, chemical peels, and laser therapies, tailored to different wrinkle types.
-                                </div>
-                            </div>
-
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    How do anti-wrinkle injections work?
-                                    <span class="faq-icon">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    Botulinum toxin temporarily relaxes muscles causing dynamic wrinkles (crow’s feet,
-                                    frown
-                                    lines,
-                                    forehead lines), with results in 3–7 days lasting 3–6 months.
-                                </div>
-                            </div>
-
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    Are anti-wrinkle treatments safe?
-                                    <span class="faq-icon">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    Treatments are safe when performed by experienced dermatologists using FDA-approved
-                                    products and
-                                    following strict protocols.
-                                </div>
-                            </div>
-
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    What is the difference between anti-wrinkle injections and dermal fillers?
-                                    <span class="faq-icon">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    Injections relax muscles (dynamic wrinkles), while fillers add volume (static
-                                    wrinkles).
-                                    Both
-                                    can be combined for full facial rejuvenation.
-                                </div>
-                            </div>
-
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    How long do anti-wrinkle treatments last?
-                                    <span class="faq-icon">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    Injections: 3–6 months; Fillers: 6–24 months; Chemical peels and lasers:
-                                    long-lasting
-                                    with
-                                    proper maintenance.
-                                </div>
-                            </div>
-
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    When is the best time to start anti-wrinkle treatments?
-                                    <span class="faq-icon">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    Late 20s or 30s for prevention, but treatments can be effective at any age depending
-                                    on
-                                    skin
-                                    condition and goals.
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </section>
-            </div>
+    </div>
+</section>

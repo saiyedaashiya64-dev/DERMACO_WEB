@@ -16,20 +16,7 @@ fetch("../CONTENT/footer.html")
 
 
 loadPage("../PAGES/home.html");
-document.addEventListener("click", function (e) {
 
-  if (e.target.classList.contains("open-cta-popup")) {
-    document.querySelector(".cta-popup-overlay").style.display = "flex";
-  }
-
-  if (
-    e.target.classList.contains("cta-close") ||
-    e.target.classList.contains("cta-popup-overlay")
-  ) {
-    document.querySelector(".cta-popup-overlay").style.display = "none";
-  }
-
-});
 
 
 
