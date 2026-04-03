@@ -1,0 +1,80 @@
+<section class="products-page fade-in">
+  <div class="container">
+    <h2 class="section-title">Dermatology Products</h2>
+
+    <!-- ── Search & Filter Bar ── -->
+    <div class="products-filter-bar">
+
+      <!-- Search -->
+      <div class="filter-search-wrap">
+        <i class="fas fa-search filter-search-icon"></i>
+        <input type="text" id="product-search" class="filter-search-input" placeholder="Search products...">
+      </div>
+
+      <!-- Skin Type -->
+      <select id="filter-skintype" class="filter-select">
+        <option value="">All Skin Types</option>
+        <option value="Oily Skin">Oily Skin</option>
+        <option value="Dry Skin">Dry Skin</option>
+        <option value="Combination Skin">Combination Skin</option>
+        <option value="Sensitive Skin">Sensitive Skin</option>
+        <option value="Normal Skin">Normal Skin</option>
+        <option value="All Skin Types">All Skin Types</option>
+      </select>
+
+      <!-- Concern -->
+      <select id="filter-concern" class="filter-select">
+        <option value="">All Concerns</option>
+        <option value="Acne">Acne</option>
+        <option value="Dark Circles">Dark Circles</option>
+        <option value="Dark Spots">Dark Spots</option>
+        <option value="Dryness">Dryness</option>
+        <option value="Fine Lines">Fine Lines</option>
+        <option value="Hyperpigmentation">Hyperpigmentation</option>
+        <option value="Large Pores">Large Pores</option>
+        <option value="Oily Skin">Oily Skin</option>
+        <option value="Puffiness">Puffiness</option>
+        <option value="Uneven Skin Tone">Uneven Skin Tone</option>
+        <option value="Wrinkles">Wrinkles</option>
+      </select>
+
+      <!-- Price Range -->
+      <select id="filter-price" class="filter-select">
+        <option value="">Any Price</option>
+        <option value="0-300">Under ₹300</option>
+        <option value="300-500">₹300 – ₹500</option>
+        <option value="500-800">₹500 – ₹800</option>
+        <option value="800-99999">Above ₹800</option>
+      </select>
+
+      <!-- Sort -->
+      <select id="filter-sort" class="filter-select">
+        <option value="">Sort By</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name-asc">Name: A to Z</option>
+      </select>
+
+      <!-- Clear -->
+      <button id="filter-clear" class="filter-clear-btn" onclick="clearFilters()" style="display:none">
+        <i class="fas fa-times"></i> Clear
+      </button>
+
+    </div>
+
+    <!-- Results count -->
+    <p id="filter-results-count" class="filter-results-count" style="display:none"></p>
+
+    <!-- Products Grid -->
+    <div id="products-container" class="catalog-grid"></div>
+
+    <!-- No results -->
+    <div id="no-results" class="no-results-wrap" style="display:none">
+      <i class="fas fa-search no-results-icon"></i>
+      <h3>No products found</h3>
+      <p>Try adjusting your search or filters</p>
+      <button class="btn-primary" onclick="clearFilters()">Clear Filters</button>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,56 @@
+<section class="cart-page fade-in">
+  <div class="container">
+
+    <div class="cart-page-header">
+      <h2 class="cart-heading"><i class="fas fa-shopping-bag"></i> My Bag</h2>
+      <a href="#" onclick="loadPage('PAGES/products.html')" class="cart-continue">
+        <i class="fas fa-arrow-left"></i> Continue Shopping
+      </a>
+    </div>
+
+    <!-- Free delivery progress bar -->
+    <div class="free-delivery-bar" id="free-delivery-bar">
+      <div class="fdb-text" id="fdb-text">Add <strong id="fdb-remaining">₹399</strong> more for FREE delivery!</div>
+      <div class="fdb-track">
+        <div class="fdb-fill" id="fdb-fill" style="width:0%"></div>
+      </div>
+    </div>
+
+    <div class="cart-layout">
+
+      <!-- Cart Items -->
+      <div class="cart-items" id="cart-items">
+        <p class="text-muted">Loading your bag...</p>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="cart-summary" id="cart-summary" style="display:none;">
+        <h3><i class="fas fa-receipt"></i> Order Summary</h3>
+
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">₹0</span>
+        </div>
+        <div class="summary-row">
+          <span>Delivery</span>
+          <span id="cart-delivery">FREE</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total</span>
+          <span id="cart-total">₹0</span>
+        </div>
+
+        <div class="cart-perks">
+          <div class="perk"><i class="fas fa-shield-alt"></i> Secure Checkout</div>
+          <div class="perk"><i class="fas fa-undo"></i> Easy Returns</div>
+          <div class="perk"><i class="fas fa-truck"></i> Fast Delivery</div>
+        </div>
+
+        <button class="btn-checkout" id="btn-checkout">
+          <i class="fas fa-lock"></i> Proceed to Checkout
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>

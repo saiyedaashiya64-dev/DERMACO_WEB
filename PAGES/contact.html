@@ -43,7 +43,7 @@
       <h3>Book a Consultation</h3>
 
       <!-- 🔴 EMAILJS FORM -->
-      <form class="contact-form" id="contactForm" novalidate>
+      <form class="contact-form" id="contactForm" action="/dermaco_web/api/save-appointment.php" method="POST">
 
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
@@ -58,6 +58,21 @@
           <option>Hair Loss</option>
           <option>General Consultation</option>
         </select>
+
+        <!-- Date Picker -->
+<div class="mb-3">
+    <label for="appointment_date" class="form-label">Preferred Date</label>
+    <input type="date" class="form-control" id="appointment_date" name="appointment_date" required>
+    <div class="form-text text-muted">Mon–Fri: 10AM–7PM &nbsp;|&nbsp; Sat: 10AM–5PM &nbsp;|&nbsp; Sun: Closed</div>
+</div>
+
+<!-- Time Slots -->
+<div class="mb-3" id="slot-section" style="display:none;">
+    <label class="form-label">Available Time Slots</label>
+    <div id="slot-container" class="d-flex flex-wrap gap-2"></div>
+    <input type="hidden" id="appointment_time" name="appointment_time">
+    <div id="slot-message" class="form-text text-danger mt-1" style="display:none;"></div>
+</div>
 
         <textarea rows="4" name="message" placeholder="Your Message" required></textarea>
 

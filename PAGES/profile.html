@@ -1,0 +1,69 @@
+<section class="profile-page fade-in">
+  <div class="container">
+
+    <div class="profile-wrapper">
+
+      <!-- Sidebar -->
+      <div class="profile-sidebar">
+        <div class="profile-avatar-wrap">
+          <div class="profile-avatar" id="profile-avatar-letter">A</div>
+          <h3 id="profile-sidebar-name">Loading...</h3>
+          <p id="profile-sidebar-email">...</p>
+        </div>
+        <ul class="profile-nav">
+          <li class="active" data-tab="info"><i class="fas fa-user"></i> My Info</li>
+          <li data-tab="password"><i class="fas fa-lock"></i> Change Password</li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <div class="profile-main">
+
+        <!-- My Info Tab -->
+        <div class="profile-tab active" id="tab-info">
+          <h2 class="profile-heading">My Information</h2>
+          <div class="profile-card">
+            <div class="profile-field">
+              <label>Full Name</label>
+              <p id="profile-name">—</p>
+            </div>
+            <div class="profile-divider"></div>
+            <div class="profile-field">
+              <label>Email Address</label>
+              <p id="profile-email">—</p>
+            </div>
+            <div class="profile-divider"></div>
+            <div class="profile-field">
+              <label>Account Type</label>
+              <p><span class="profile-badge">Customer</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Change Password Tab -->
+        <div class="profile-tab" id="tab-password">
+          <h2 class="profile-heading">Change Password</h2>
+          <div class="profile-card">
+            <div class="profile-form-group">
+              <label>Current Password</label>
+              <input type="password" id="current-password" class="profile-input" placeholder="Enter current password">
+            </div>
+            <div class="profile-form-group">
+              <label>New Password</label>
+              <input type="password" id="new-password" class="profile-input" placeholder="Enter new password">
+            </div>
+            <div class="profile-form-group">
+              <label>Confirm New Password</label>
+              <input type="password" id="confirm-password" class="profile-input" placeholder="Confirm new password">
+            </div>
+            <button class="btn-save-password" id="btn-save-password">
+              <i class="fas fa-save"></i> Update Password
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

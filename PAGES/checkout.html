@@ -1,0 +1,92 @@
+<section class="checkout-page fade-in">
+  <div class="container">
+
+    <h2 class="cart-heading">Checkout</h2>
+
+    <div class="checkout-layout" id="checkout-layout">
+
+      <!-- Delivery Form -->
+      <div class="checkout-form-wrap">
+        <div class="profile-card">
+          <h3 class="checkout-section-title"><i class="fas fa-map-marker-alt"></i> Delivery Details</h3>
+
+          <div class="profile-form-group">
+            <label>Full Name</label>
+            <input type="text" id="co-name" class="profile-input" placeholder="Enter your full name">
+          </div>
+          <div class="profile-form-group">
+            <label>Email Address</label>
+            <input type="email" id="co-email" class="profile-input" placeholder="Enter your email">
+          </div>
+          <div class="profile-form-group">
+            <label>Phone Number</label>
+            <input type="text" id="co-phone" class="profile-input" placeholder="Enter your phone number">
+          </div>
+          <div class="profile-form-group">
+            <label>Delivery Address</label>
+            <input type="text" id="co-address" class="profile-input" placeholder="House no, Street, Area">
+          </div>
+          <div class="profile-form-group">
+            <label>City</label>
+            <input type="text" id="co-city" class="profile-input" placeholder="Enter your city">
+          </div>
+          <div class="profile-form-group">
+            <label>Pincode</label>
+            <input type="text" id="co-pincode" class="profile-input" placeholder="Enter pincode">
+          </div>
+
+          <h3 class="checkout-section-title" style="margin-top:24px"><i class="fas fa-wallet"></i> Payment Method</h3>
+          <div class="cod-box">
+            <i class="fas fa-money-bill-wave"></i>
+            <div>
+              <strong>Cash on Delivery</strong>
+              <p>Pay when your order arrives</p>
+            </div>
+            <span class="cod-check"><i class="fas fa-check-circle"></i></span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="checkout-summary-wrap">
+        <div class="profile-card">
+          <h3 class="checkout-section-title"><i class="fas fa-shopping-bag"></i> Order Summary</h3>
+          <div id="co-items">
+            <p class="text-muted">Loading...</p>
+          </div>
+          <div class="profile-divider" style="margin: 16px 0"></div>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="co-subtotal">₹0</span>
+          </div>
+          <div class="summary-row">
+            <span>Delivery</span>
+            <span id="co-delivery">₹50</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span id="co-total">₹0</span>
+          </div>
+          <button class="btn-checkout" id="btn-place-order" style="margin-top:20px">
+            <i class="fas fa-lock"></i> Place Order
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Success Section (hidden initially) -->
+    <div class="order-success" id="order-success" style="display:none">
+      <div class="order-success-icon"><i class="fas fa-check-circle"></i></div>
+      <h2>Order Placed Successfully!</h2>
+      <p>Thank you for your order. A confirmation email has been sent to you.</p>
+      <div class="order-success-card" id="order-success-details"></div>
+      <button class="btn-checkout" style="max-width:300px; margin: 20px auto 0; display:block"
+        onclick="loadPage('PAGES/products.html')">
+        Continue Shopping
+      </button>
+    </div>
+
+  </div>
+</section>
